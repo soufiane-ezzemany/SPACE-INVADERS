@@ -38,13 +38,14 @@ namespace Space_Invaders.Logic
         public void KeyDown(Key key)
         {
             switch (key)
-            {
-                if (this.Left > 0)
+            {   
+                case Key.Left:
+                    if (this.Left > 0)
                     {
                         MoveXY(-10, 0);
                         this.Orientation = -20;
                     }
-                    break;
+                     break;
                 case Key.Right:
                     if (this.Right < 1200)
                     {

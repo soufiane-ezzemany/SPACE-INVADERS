@@ -120,3 +120,5 @@ C:\Users\johng\Source\Repos\2021-22_S2-01_D1_SIJ\Source\Space Invaders\Space Inv
 C:\Users\johng\Source\Repos\2021-22_S2-01_D1_SIJ\Source\Space Invaders\Space Invaders\obj\Debug\netcoreapp3.1\Space Invaders.csproj.CopyComplete
 C:\Users\johng\Source\Repos\2021-22_S2-01_D1_SIJ\Source\Space Invaders\Space Invaders\obj\Debug\netcoreapp3.1\Space Invaders.dll
 C:\Users\johng\Source\Repos\2021-22_S2-01_D1_SIJ\Source\Space Invaders\Space Invaders\obj\Debug\netcoreapp3.1\Space Invaders.genruntimeconfig.cache
+C:\Users\johng\Source\Repos\2021-22_S2-01_D1_SIJ\Source\Space Invaders\Space Invaders\obj\Debug\netcoreapp3.1\View\GameOverPage.g.cs
+C:\Users\johng\Source\Repos\2021-22_S2-01_D1_SIJ\Source\Space Invaders\Space Invaders\obj\Debug\netcoreapp3.1\View\GameOverPage.baml

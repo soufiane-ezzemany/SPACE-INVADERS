@@ -22,5 +22,15 @@ namespace Space_Invaders.View
         {
             InitializeComponent();
         }
+
+        private void Menu(object sender, RoutedEventArgs e)
+        {
+            //Naviguer pour retourner a la page Initiale (Menu)
+            while (this.NavigationService.CanGoBack)
+            {
+                this.NavigationService.RemoveBackEntry();
+                this.NavigationService.GoBack();
+            }
+        }
     }
 }

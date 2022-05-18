@@ -25,7 +25,8 @@ namespace Space_Invaders.View
 
         private void PlayGame(object sender, RoutedEventArgs e)
         {
-            
+            GamePage gamePage = new GamePage();
+            this.NavigationService.Navigate(gamePage);
         }
     }
 }

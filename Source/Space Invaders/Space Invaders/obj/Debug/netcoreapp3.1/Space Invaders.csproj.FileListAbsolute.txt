@@ -81,3 +81,5 @@ C:\Users\etude\Source\Repos\2021-22_S2-01_D1_SIJ\Source\Space Invaders\Space Inv
 C:\Users\etude\Source\Repos\2021-22_S2-01_D1_SIJ\Source\Space Invaders\Space Invaders\obj\Debug\netcoreapp3.1\Space Invaders.dll
 C:\Users\etude\Source\Repos\2021-22_S2-01_D1_SIJ\Source\Space Invaders\Space Invaders\obj\Debug\netcoreapp3.1\Space Invaders.pdb
 C:\Users\etude\Source\Repos\2021-22_S2-01_D1_SIJ\Source\Space Invaders\Space Invaders\obj\Debug\netcoreapp3.1\Space Invaders.genruntimeconfig.cache
+C:\Users\etude\Source\Repos\2021-22_S2-01_D1_SIJ\Source\Space Invaders\Space Invaders\obj\Debug\netcoreapp3.1\View\GamePage.g.cs
+C:\Users\etude\Source\Repos\2021-22_S2-01_D1_SIJ\Source\Space Invaders\Space Invaders\obj\Debug\netcoreapp3.1\View\GamePage.baml

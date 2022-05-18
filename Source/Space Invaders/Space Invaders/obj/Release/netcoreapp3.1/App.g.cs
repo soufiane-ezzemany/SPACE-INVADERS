@@ -59,7 +59,7 @@ namespace Space_Invaders {
             
             #line default
             #line hidden
-            System.Uri resourceLocater = new System.Uri("/Space Invaders;component/app.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Space Invaders_kkojb21k_wpftmp;component/app.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\App.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

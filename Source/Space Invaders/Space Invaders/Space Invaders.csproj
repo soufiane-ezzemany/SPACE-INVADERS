@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Font\BungeeInline-Regular.ttf" />
     <None Remove="Sprites\Background\background.gif" />
     <None Remove="Sprites\Background\Banner.png" />
   </ItemGroup>
@@ -25,12 +26,12 @@
 
   <ItemGroup>
     <Folder Include="Logic\" />
-    <Folder Include="Font\" />
     <Folder Include="Res\" />
     <Folder Include="Sounds\" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Font\BungeeInline-Regular.ttf" />
     <Resource Include="Sprites\Background\background.gif" />
     <Resource Include="Sprites\Background\Banner.png" />
   </ItemGroup>

@@ -22,5 +22,10 @@ namespace Space_Invaders.View
         {
             InitializeComponent();
         }
+
+        private void PlayGame(object sender, RoutedEventArgs e)
+        {
+            
+        }
     }
 }

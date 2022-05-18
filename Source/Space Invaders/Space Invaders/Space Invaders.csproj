@@ -12,6 +12,7 @@
     <None Remove="Sprites\Background\background.gif" />
     <None Remove="Sprites\Background\background.png" />
     <None Remove="Sprites\Background\Banner.png" />
+    <None Remove="Sprites\Decor\spaceship.png" />
     <None Remove="Sprites\Icon\pauseIcon.png" />
   </ItemGroup>
 
@@ -36,6 +37,7 @@
     <Resource Include="Sprites\Background\background.gif" />
     <Resource Include="Sprites\Background\background.png" />
     <Resource Include="Sprites\Background\Banner.png" />
+    <Resource Include="Sprites\Decor\spaceship.png" />
     <Resource Include="Sprites\Icon\pauseIcon.png" />
   </ItemGroup>
 

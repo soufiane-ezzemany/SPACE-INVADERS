@@ -9,7 +9,8 @@
       "Space Invaders/1.0.0": {
         "dependencies": {
           "Grumson.cSharp.GamePad": "1.0.0.2",
-          "XamlAnimatedGif": "2.0.2"
+          "XamlAnimatedGif": "2.0.2",
+          "IUTGame": "1.0.0.0"
         },
         "runtime": {
           "Space Invaders.dll": {}
@@ -731,6 +732,14 @@
             "fileVersion": "2.0.2.0"
           }
         }
+      },
+      "IUTGame/1.0.0.0": {
+        "runtime": {
+          "IUTGame.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
       }
     }
   },
@@ -1285,6 +1294,11 @@
       "sha512": "sha512-C2ux+lDeu07iRMgc/8zh4p+gxL2bdqoEVshPDfPTEc3pWD5TO3tO4C5fsuoc1SwlPHXEBFwG6cgBg3+DrqPaog==",
       "path": "xamlanimatedgif/2.0.2",
       "hashPath": "xamlanimatedgif.2.0.2.nupkg.sha512"
+    },
+    "IUTGame/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

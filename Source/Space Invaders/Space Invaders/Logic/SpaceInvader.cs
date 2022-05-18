@@ -13,7 +13,11 @@ namespace Space_Invaders.Logic
         }
         protected override void InitItems()
         {
-            throw new NotImplementedException();
+            double y = this.Canvas.ActualHeight - 60;
+            double x = this.Canvas.ActualWidth / 2;
+            Player spaceship = new Player(x, y, Canvas, this);
+            AddItem(spaceship);
+            PlayBackgroundMusic("opening.mp3");
         }
 
         protected override void RunWhenLoose()

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Space_Invaders.Logic;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -17,16 +18,22 @@ namespace Space_Invaders.View
     /// Logique d'interaction pour MenuPage.xaml
     /// </summary>
     public partial class MenuPage : Page
-    {
+    {   
+        private SpaceInvader jeu;
+        private GamePage gamePage;
         public MenuPage()
         {
             InitializeComponent();
+            gamePage = new GamePage();
+            jeu = new SpaceInvader(gamePage.Canvas);
+
         }
 
         private void PlayGame(object sender, RoutedEventArgs e)
         {
-            GamePage gamePage = new GamePage();
+                 
             this.NavigationService.Navigate(gamePage);
+            jeu.Run();
         }
     }
 }

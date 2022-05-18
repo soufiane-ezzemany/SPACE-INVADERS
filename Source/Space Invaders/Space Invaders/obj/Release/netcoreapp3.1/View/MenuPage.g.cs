@@ -54,7 +54,7 @@ namespace Space_Invaders.View {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Space Invaders;component/view/menupage.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Space Invaders_msg2awvs_wpftmp;component/view/menupage.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\View\MenuPage.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

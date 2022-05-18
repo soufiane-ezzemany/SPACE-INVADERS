@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Space_Invaders.View;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,8 @@ namespace Space_Invaders
         public MainWindow()
         {
             InitializeComponent();
+            MenuPage menu = new MenuPage();
+            myframe.Navigate(menu);
         }
     }
 }

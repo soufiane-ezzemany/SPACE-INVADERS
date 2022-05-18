@@ -4,6 +4,81 @@
              xmlns:local="clr-namespace:Space_Invaders"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+         <!--Styles pour le jeu-->
+
+        <Style TargetType="Button" x:Key="ButtonStyle">
+            <Setter Property="Foreground" Value="black" />
+            <Setter Property="Background" Value="#FEFE5A"/>
+            <Setter Property="FontSize" Value="24" />
+            <Setter Property="FontFamily" Value="/Font/#Bungee Inline"/>
+            <Setter Property="BorderThickness" Value="0"></Setter>
+        </Style>
+
+        <Style x:Key="Bungee">
+            <Setter Property="TextElement.FontFamily" Value="/Font/#Bungee Inline">
+            </Setter>
+        </Style>
+
+        <Style x:Key="CustomSliderV2Border" TargetType="Border">
+            <Setter Property="CornerRadius" Value="12"/>
+            <Setter Property="Background" Value="#FEFE5A"/>
+            <Setter Property="HorizontalAlignment" Value="Stretch"/>
+            <Setter Property="VerticalAlignment" Value="Stretch"/>
+            <Setter Property="BorderBrush" Value="#FEFE5A"/>
+            <Setter Property="BorderThickness" Value="0"/>
+        </Style>
+
+        <Style x:Key="CustomSliderRepeatButtonDecrease" TargetType="RepeatButton">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="RepeatButton">
+                        <Border VerticalAlignment="Stretch" />
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="CustomSliderRepeatButtonIncrease" TargetType="RepeatButton">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="RepeatButton">
+                        <Border  Background="Black" Opacity="1" Margin="-15,0,4,0" Height="15" CornerRadius="10"/>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="CustomSliderThumb" TargetType="Thumb">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Thumb">
+                        <Ellipse Width="{TemplateBinding ActualHeight}" Height="{TemplateBinding ActualHeight}"  Fill="LightGray" Stroke="Black"></Ellipse>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="CustomSlider_V2" TargetType="Slider">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Slider">
+                        <Grid>
+                            <Border Style="{StaticResource CustomSliderV2Border}"/>
+                            <Track x:Name="PART_Track">
+                                <Track.IncreaseRepeatButton>
+                                    <RepeatButton Style="{StaticResource CustomSliderRepeatButtonIncrease}" Command="Slider.IncreaseLarge" />
+                                </Track.IncreaseRepeatButton>
+                                <Track.Thumb>
+                                    <Thumb Foreground="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Foreground}" Style="{StaticResource CustomSliderThumb}"/>
+                                </Track.Thumb>
+                                <Track.DecreaseRepeatButton>
+                                    <RepeatButton Style="{StaticResource CustomSliderRepeatButtonDecrease}" Command="Slider.DecreaseLarge"/>
+                                </Track.DecreaseRepeatButton>
+                            </Track>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
     </Application.Resources>
 </Application>

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ncQ3XQZlpIYeKL3SyX6vtnlV0x9jizEq/7HXIREdWMPI7CmfTNMOMjiZiXVevqa3fKDhctINNujcgmCdAZlLOg==",
+  "dgSpecHash": "Ou4Kbc5DQVfzfV0q/1Vd+HbfSa5KOk8mijBPp8v2I8r5h6quPGupbZuv+eECKBgvRxNu/tjv7MQfEbhFrFXdOA==",
   "success": true,
   "projectFilePath": "C:\\Users\\se088191\\Source\\Repos\\2021-22_S2-01_D1_SIJ\\Source\\Space Invaders\\Space Invaders\\Space Invaders.csproj",
   "expectedPackageFiles": [
@@ -80,7 +80,8 @@
     "C:\\Users\\se088191\\.nuget\\packages\\system.threading.tasks.extensions\\4.3.0\\system.threading.tasks.extensions.4.3.0.nupkg.sha512",
     "C:\\Users\\se088191\\.nuget\\packages\\system.threading.timer\\4.3.0\\system.threading.timer.4.3.0.nupkg.sha512",
     "C:\\Users\\se088191\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
-    "C:\\Users\\se088191\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
+    "C:\\Users\\se088191\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
+    "C:\\Users\\se088191\\.nuget\\packages\\xamlanimatedgif\\2.0.2\\xamlanimatedgif.2.0.2.nupkg.sha512"
   ],
   "logs": [
     {

@@ -21,15 +21,14 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="IUTGame">
-      <HintPath>..\..\..\..\..\..\Desktop\IUTGame.dll</HintPath>
-    </Reference>
+    <Folder Include="Res\" />
+    <Folder Include="Sounds\" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Logic\" />
-    <Folder Include="Res\" />
-    <Folder Include="Sounds\" />
+    <Reference Include="IUTGame">
+      <HintPath>..\IUTGame.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
   <ItemGroup>

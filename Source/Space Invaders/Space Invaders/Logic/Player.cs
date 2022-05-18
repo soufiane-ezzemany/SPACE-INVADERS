@@ -29,7 +29,7 @@ namespace Space_Invaders.Logic
 
         public void KeyUp(Key key)
         {
-            
+            this.Orientation = 0;
         }
 
         public void KeyDown(Key key)
@@ -37,10 +37,16 @@ namespace Space_Invaders.Logic
             switch (key)
             {
                 case Key.Left:
-                    MoveXY(-10, 0); break;
+                    MoveXY(-10, 0);
+                    this.Orientation = -20;
+                    break;
                 case Key.Right:
-                    MoveXY(10, 0); break;
+                    this.Orientation = 20;
+                    MoveXY(10, 0); 
+                    break;
             }
+
+            
         }
     }
 }

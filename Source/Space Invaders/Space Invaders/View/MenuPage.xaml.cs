@@ -25,9 +25,9 @@ namespace Space_Invaders.View
         {
             InitializeComponent();
             gamePage = new GamePage();
-            jeu = new SpaceInvader(gamePage.Canvas);
+            jeu = new SpaceInvader(gamePage.Canvas);  
 
-        }
+        } 
 
         private void PlayGame(object sender, RoutedEventArgs e)
         {

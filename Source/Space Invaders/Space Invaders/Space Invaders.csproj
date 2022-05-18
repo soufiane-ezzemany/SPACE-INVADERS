@@ -17,4 +17,10 @@
     </Reference>
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Res\" />
+    <Folder Include="Sounds\" />
+    <Folder Include="Sprites\" />
+  </ItemGroup>
+
 </Project>

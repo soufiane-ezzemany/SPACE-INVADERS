@@ -4615,20 +4615,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\etude\\.nuget\\packages\\": {}
+    "C:\\Users\\johng\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\etude\\Source\\Repos\\2021-22_S2-01_D1_SIJ\\Source\\Space Invaders\\Space Invaders\\Space Invaders.csproj",
+      "projectUniqueName": "C:\\Users\\johng\\Source\\Repos\\2021-22_S2-01_D1_SIJ\\Source\\Space Invaders\\Space Invaders\\Space Invaders.csproj",
       "projectName": "Space Invaders",
-      "projectPath": "C:\\Users\\etude\\Source\\Repos\\2021-22_S2-01_D1_SIJ\\Source\\Space Invaders\\Space Invaders\\Space Invaders.csproj",
-      "packagesPath": "C:\\Users\\etude\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\etude\\Source\\Repos\\2021-22_S2-01_D1_SIJ\\Source\\Space Invaders\\Space Invaders\\obj\\",
+      "projectPath": "C:\\Users\\johng\\Source\\Repos\\2021-22_S2-01_D1_SIJ\\Source\\Space Invaders\\Space Invaders\\Space Invaders.csproj",
+      "packagesPath": "C:\\Users\\johng\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\johng\\Source\\Repos\\2021-22_S2-01_D1_SIJ\\Source\\Space Invaders\\Space Invaders\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "C:\\Users\\etude\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\johng\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"

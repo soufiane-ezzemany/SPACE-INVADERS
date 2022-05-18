@@ -9,9 +9,20 @@
       Title="PauseGamePage">
 
     <Grid>
-        <Label Content="GAME OVER" Style="{StaticResource Bungee}" Grid.Column="1" Height="98" Width="412" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Top" Foreground="#FEFE5A" HorizontalContentAlignment="Center" FontSize="50px" Grid.RowSpan="2" Margin="0,65,0,0"/>
-        <Label Content="Score : " Style="{StaticResource Bungee}" Grid.Column="1" Height="100" Width="348" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Top" Foreground="#FEFE5A" HorizontalContentAlignment="Center" VerticalContentAlignment="Top" FontSize="32px" BorderThickness="3" BorderBrush="#FEFE5A" Margin="0,75,0,0"  />
-        <Button Grid.Column="2" Grid.Row="3" Height="50" Width="130"  VerticalAlignment="Top" HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="MENU" FontSize="24" Style="{StaticResource ButtonStyle}" Click="Menu"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="1*"/>
+            
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
 
+        <Button Grid.Column="1" Grid.Row="1" Height="60" Width="250"  Margin="0 20 0 0" VerticalAlignment="Top" HorizontalAlignment="Center" Content="Play"  Style="{StaticResource ButtonStyle}" />
+        <Button  Grid.Column="1" Grid.Row="1" Height="60" Width="250"  Margin="0 20 0 0" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Exit"  Style="{StaticResource ButtonStyle}" />
+        <Slider Style="{StaticResource CustomSlider_V2}" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" Margin="0 0 0 20" VerticalAlignment="Bottom" Width="220" Height="25" Minimum="0" Maximum="100" Value="0" SmallChange="1"/>
     </Grid>
 </Page>

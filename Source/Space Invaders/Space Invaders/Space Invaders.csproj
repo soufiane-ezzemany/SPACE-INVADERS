@@ -8,6 +8,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Sprites\Background\background.gif" />
+    <None Remove="Sprites\Background\Banner.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Grumson.cSharp.GamePad" Version="1.0.0.2" />
     <PackageReference Include="XamlAnimatedGif" Version="2.0.2" />
   </ItemGroup>
@@ -23,7 +28,11 @@
     <Folder Include="Font\" />
     <Folder Include="Res\" />
     <Folder Include="Sounds\" />
-    <Folder Include="Sprites\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Sprites\Background\background.gif" />
+    <Resource Include="Sprites\Background\Banner.png" />
   </ItemGroup>
 
 </Project>

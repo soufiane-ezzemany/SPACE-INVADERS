@@ -11,6 +11,7 @@
     <None Remove="Font\BungeeInline-Regular.ttf" />
     <None Remove="Sprites\Background\background.gif" />
     <None Remove="Sprites\Background\Banner.png" />
+    <None Remove="Sprites\Icon\pauseIcon.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -34,6 +35,7 @@
     <Resource Include="Font\BungeeInline-Regular.ttf" />
     <Resource Include="Sprites\Background\background.gif" />
     <Resource Include="Sprites\Background\Banner.png" />
+    <Resource Include="Sprites\Icon\pauseIcon.png" />
   </ItemGroup>
 
 </Project>

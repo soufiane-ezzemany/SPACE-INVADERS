@@ -52,3 +52,32 @@ C:\Users\se088191\Source\Repos\2021-22_S2-01_D1_SIJ\Source\Space Invaders\Space 
 C:\Users\se088191\Source\Repos\2021-22_S2-01_D1_SIJ\Source\Space Invaders\Space Invaders\bin\Debug\netcoreapp3.1\XamlAnimatedGif.dll
 C:\Users\se088191\Source\Repos\2021-22_S2-01_D1_SIJ\Source\Space Invaders\Space Invaders\obj\Debug\netcoreapp3.1\App.baml
 C:\Users\se088191\Source\Repos\2021-22_S2-01_D1_SIJ\Source\Space Invaders\Space Invaders\obj\Debug\netcoreapp3.1\View\MenuPage.baml
+C:\Users\etude\Source\Repos\2021-22_S2-01_D1_SIJ\Source\Space Invaders\Space Invaders\bin\Debug\netcoreapp3.1\Space Invaders.exe
+C:\Users\etude\Source\Repos\2021-22_S2-01_D1_SIJ\Source\Space Invaders\Space Invaders\bin\Debug\netcoreapp3.1\Space Invaders.deps.json
+C:\Users\etude\Source\Repos\2021-22_S2-01_D1_SIJ\Source\Space Invaders\Space Invaders\bin\Debug\netcoreapp3.1\Space Invaders.runtimeconfig.json
+C:\Users\etude\Source\Repos\2021-22_S2-01_D1_SIJ\Source\Space Invaders\Space Invaders\bin\Debug\netcoreapp3.1\Space Invaders.runtimeconfig.dev.json
+C:\Users\etude\Source\Repos\2021-22_S2-01_D1_SIJ\Source\Space Invaders\Space Invaders\bin\Debug\netcoreapp3.1\Space Invaders.dll
+C:\Users\etude\Source\Repos\2021-22_S2-01_D1_SIJ\Source\Space Invaders\Space Invaders\bin\Debug\netcoreapp3.1\Space Invaders.pdb
+C:\Users\etude\Source\Repos\2021-22_S2-01_D1_SIJ\Source\Space Invaders\Space Invaders\bin\Debug\netcoreapp3.1\GamePad.dll
+C:\Users\etude\Source\Repos\2021-22_S2-01_D1_SIJ\Source\Space Invaders\Space Invaders\bin\Debug\netcoreapp3.1\Timer.dll
+C:\Users\etude\Source\Repos\2021-22_S2-01_D1_SIJ\Source\Space Invaders\Space Invaders\bin\Debug\netcoreapp3.1\SharpDX.dll
+C:\Users\etude\Source\Repos\2021-22_S2-01_D1_SIJ\Source\Space Invaders\Space Invaders\bin\Debug\netcoreapp3.1\SharpDX.DirectInput.dll
+C:\Users\etude\Source\Repos\2021-22_S2-01_D1_SIJ\Source\Space Invaders\Space Invaders\bin\Debug\netcoreapp3.1\XamlAnimatedGif.dll
+C:\Users\etude\Source\Repos\2021-22_S2-01_D1_SIJ\Source\Space Invaders\Space Invaders\obj\Debug\netcoreapp3.1\Space Invaders.csproj.AssemblyReference.cache
+C:\Users\etude\Source\Repos\2021-22_S2-01_D1_SIJ\Source\Space Invaders\Space Invaders\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\etude\Source\Repos\2021-22_S2-01_D1_SIJ\Source\Space Invaders\Space Invaders\obj\Debug\netcoreapp3.1\View\MenuPage.g.cs
+C:\Users\etude\Source\Repos\2021-22_S2-01_D1_SIJ\Source\Space Invaders\Space Invaders\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\etude\Source\Repos\2021-22_S2-01_D1_SIJ\Source\Space Invaders\Space Invaders\obj\Debug\netcoreapp3.1\Space Invaders_MarkupCompile.cache
+C:\Users\etude\Source\Repos\2021-22_S2-01_D1_SIJ\Source\Space Invaders\Space Invaders\obj\Debug\netcoreapp3.1\Space Invaders_MarkupCompile.lref
+C:\Users\etude\Source\Repos\2021-22_S2-01_D1_SIJ\Source\Space Invaders\Space Invaders\obj\Debug\netcoreapp3.1\App.baml
+C:\Users\etude\Source\Repos\2021-22_S2-01_D1_SIJ\Source\Space Invaders\Space Invaders\obj\Debug\netcoreapp3.1\MainWindow.baml
+C:\Users\etude\Source\Repos\2021-22_S2-01_D1_SIJ\Source\Space Invaders\Space Invaders\obj\Debug\netcoreapp3.1\View\MenuPage.baml
+C:\Users\etude\Source\Repos\2021-22_S2-01_D1_SIJ\Source\Space Invaders\Space Invaders\obj\Debug\netcoreapp3.1\Space Invaders.g.resources
+C:\Users\etude\Source\Repos\2021-22_S2-01_D1_SIJ\Source\Space Invaders\Space Invaders\obj\Debug\netcoreapp3.1\Space Invaders.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\etude\Source\Repos\2021-22_S2-01_D1_SIJ\Source\Space Invaders\Space Invaders\obj\Debug\netcoreapp3.1\Space Invaders.AssemblyInfoInputs.cache
+C:\Users\etude\Source\Repos\2021-22_S2-01_D1_SIJ\Source\Space Invaders\Space Invaders\obj\Debug\netcoreapp3.1\Space Invaders.AssemblyInfo.cs
+C:\Users\etude\Source\Repos\2021-22_S2-01_D1_SIJ\Source\Space Invaders\Space Invaders\obj\Debug\netcoreapp3.1\Space Invaders.csproj.CoreCompileInputs.cache
+C:\Users\etude\Source\Repos\2021-22_S2-01_D1_SIJ\Source\Space Invaders\Space Invaders\obj\Debug\netcoreapp3.1\Space Invaders.csproj.CopyComplete
+C:\Users\etude\Source\Repos\2021-22_S2-01_D1_SIJ\Source\Space Invaders\Space Invaders\obj\Debug\netcoreapp3.1\Space Invaders.dll
+C:\Users\etude\Source\Repos\2021-22_S2-01_D1_SIJ\Source\Space Invaders\Space Invaders\obj\Debug\netcoreapp3.1\Space Invaders.pdb
+C:\Users\etude\Source\Repos\2021-22_S2-01_D1_SIJ\Source\Space Invaders\Space Invaders\obj\Debug\netcoreapp3.1\Space Invaders.genruntimeconfig.cache

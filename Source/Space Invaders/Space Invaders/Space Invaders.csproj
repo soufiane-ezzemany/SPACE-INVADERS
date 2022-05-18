@@ -13,6 +13,9 @@
     <None Remove="Sprites\Background\background.gif" />
     <None Remove="Sprites\Background\background.png" />
     <None Remove="Sprites\Background\Banner.png" />
+    <None Remove="Sprites\Decor\alienb.png" />
+    <None Remove="Sprites\Decor\alienr.png" />
+    <None Remove="Sprites\Decor\alienv.png" />
     <None Remove="Sprites\Decor\spaceship.png" />
     <None Remove="Sprites\Icon\pauseIcon.png" />
   </ItemGroup>
@@ -40,6 +43,9 @@
     <Resource Include="Sprites\Background\background.gif" />
     <Resource Include="Sprites\Background\background.png" />
     <Resource Include="Sprites\Background\Banner.png" />
+    <Resource Include="Sprites\Decor\alienb.png" />
+    <Resource Include="Sprites\Decor\alienr.png" />
+    <Resource Include="Sprites\Decor\alienv.png" />
     <Resource Include="Sprites\Decor\spaceship.png" />
     <Resource Include="Sprites\Icon\pauseIcon.png" />
   </ItemGroup>

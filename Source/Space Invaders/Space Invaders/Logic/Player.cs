@@ -9,7 +9,10 @@ namespace Space_Invaders.Logic
 {
     public class Player : GameItem, IAnimable, IKeyboardInteract
     {
+        private int live = 3;
+
         public override string TypeName => "SPACESHIP";
+
 
         public Player(double x, double y, Canvas c, Game g)
             : base(x, y, c, g, "Decor/spaceship.png")
@@ -37,18 +40,12 @@ namespace Space_Invaders.Logic
             switch (key)
             {
                 case Key.Left:
-                    if (this.Left > 0)
-                    {
-                        MoveXY(-10, 0);
-                        this.Orientation = -20;
-                    }
+                    MoveXY(-10, 0);
+                    this.Orientation = -20;
                     break;
                 case Key.Right:
-                    if (this.Right < 1200)
-                    {
-                        MoveXY(10, 0);
-                        this.Orientation = 20;
-                    }
+                    this.Orientation = 20;
+                    MoveXY(10, 0); 
                     break;
             }
 

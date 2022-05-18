@@ -22,5 +22,16 @@ namespace Space_Invaders.View
         {
             InitializeComponent();
         }
+
+        /// <summary>
+        /// Permet l'ouverture via naviguation de la page Pause
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void PauseSetting(object sender, RoutedEventArgs e)
+        {
+            PauseGamePage pause = new PauseGamePage();
+            this.NavigationService.Navigate(pause);
+        }
     }
 }

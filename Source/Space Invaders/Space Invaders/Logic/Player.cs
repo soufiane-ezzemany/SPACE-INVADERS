@@ -12,7 +12,7 @@ namespace Space_Invaders.Logic
         public override string TypeName => "SPACESHIP";
 
         public Player(double x, double y, Canvas c, Game g)
-            : base(x, y, c, g, "/Decor/spaceship.png")
+            : base(x, y, c, g, "Decor/spaceship.png")
         {
             
         }
@@ -24,17 +24,23 @@ namespace Space_Invaders.Logic
 
         public void Animate(TimeSpan dt)
         {
-            throw new NotImplementedException();
+            
         }
 
         public void KeyUp(Key key)
         {
-            throw new NotImplementedException();
+            
         }
 
         public void KeyDown(Key key)
         {
-            throw new NotImplementedException();
+            switch (key)
+            {
+                case Key.Left:
+                    MoveXY(-10, 0); break;
+                case Key.Right:
+                    MoveXY(10, 0); break;
+            }
         }
     }
 }

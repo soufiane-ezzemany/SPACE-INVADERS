@@ -13,11 +13,11 @@ namespace Space_Invaders.Logic
         }
         protected override void InitItems()
         {
-            double y = this.Canvas.ActualHeight - 60;
-            double x = this.Canvas.ActualWidth / 2;
+            double y = 500;
+            double x = 500;
             Player spaceship = new Player(x, y, Canvas, this);
             AddItem(spaceship);
-            PlayBackgroundMusic("opening.mp3");
+            //PlayBackgroundMusic("opening.mp3");
         }
 
         protected override void RunWhenLoose()

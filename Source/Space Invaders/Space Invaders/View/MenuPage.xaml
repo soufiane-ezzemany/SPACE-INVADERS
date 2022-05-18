@@ -19,6 +19,7 @@
             <RowDefinition Height="1*"/>
             <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
+        <!--Background en utilisant un gif-->
         <Grid.Background>
             <VisualBrush>
                 <VisualBrush.Visual>

@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("Space Invaders")]
-[assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Space Invaders_px3mjitk_wpftmp")]
+[assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
-[assembly: System.Reflection.AssemblyProductAttribute("Space Invaders")]
-[assembly: System.Reflection.AssemblyTitleAttribute("Space Invaders")]
+[assembly: System.Reflection.AssemblyProductAttribute("Space Invaders_px3mjitk_wpftmp")]
+[assembly: System.Reflection.AssemblyTitleAttribute("Space Invaders_px3mjitk_wpftmp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Généré par la classe MSBuild WriteCodeFragment.

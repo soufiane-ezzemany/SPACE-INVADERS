@@ -13,7 +13,7 @@
 
   <ItemGroup>
     <Reference Include="IUTGame">
-      <HintPath>..\IUTGame.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\Desktop\IUTGame.dll</HintPath>
     </Reference>
   </ItemGroup>
 

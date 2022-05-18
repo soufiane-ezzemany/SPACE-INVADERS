@@ -18,6 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Logic\" />
     <Folder Include="Res\" />
     <Folder Include="Sounds\" />
     <Folder Include="Sprites\" />

@@ -8,8 +8,7 @@
     ".NETCoreApp,Version=v3.1": {
       "Space Invaders/1.0.0": {
         "dependencies": {
-          "Grumson.cSharp.GamePad": "1.0.0.2",
-          "IUTGame": "1.0.0.0"
+          "Grumson.cSharp.GamePad": "1.0.0.2"
         },
         "runtime": {
           "Space Invaders.dll": {}
@@ -723,14 +722,6 @@
           "System.Threading": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0"
         }
-      },
-      "IUTGame/1.0.0.0": {
-        "runtime": {
-          "IUTGame.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
       }
     }
   },
@@ -1278,11 +1269,6 @@
       "sha512": "sha512-5zJ0XDxAIg8iy+t4aMnQAu0MqVbqyvfoUVl1yDV61xdo3Vth45oA2FoY4pPkxYAH5f8ixpmTqXeEIya95x0aCQ==",
       "path": "system.xml.xdocument/4.3.0",
       "hashPath": "system.xml.xdocument.4.3.0.nupkg.sha512"
-    },
-    "IUTGame/1.0.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
     }
   }
 }

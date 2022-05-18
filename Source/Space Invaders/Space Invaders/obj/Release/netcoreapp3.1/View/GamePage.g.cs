@@ -61,7 +61,7 @@ namespace Space_Invaders.View {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Space Invaders;component/view/gamepage.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Space Invaders_kkojb21k_wpftmp;component/view/gamepage.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\View\GamePage.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

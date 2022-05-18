@@ -24,17 +24,19 @@ namespace Space_Invaders.View
         public MenuPage()
         {
             InitializeComponent();
+            //Creation d'une page pour le jeu
             gamePage = new GamePage();
+            //Initialisation du jeu
             jeu = new SpaceInvader(gamePage.Canvas);
+            //Lancer le jeu
             jeu.Run();
 
         } 
 
         private void PlayGame(object sender, RoutedEventArgs e)
         {
-                 
+            //Utilisation d'un systeme de navigation de Page    
             this.NavigationService.Navigate(gamePage);
-            //jeu.Run();
         }
     }
 }

@@ -37,12 +37,18 @@ namespace Space_Invaders.Logic
             switch (key)
             {
                 case Key.Left:
-                    MoveXY(-10, 0);
-                    this.Orientation = -20;
+                    if (this.Left > 0)
+                    {
+                        MoveXY(-10, 0);
+                        this.Orientation = -20;
+                    }
                     break;
                 case Key.Right:
-                    this.Orientation = 20;
-                    MoveXY(10, 0); 
+                    if (this.Right < 1200)
+                    {
+                        MoveXY(10, 0);
+                        this.Orientation = 20;
+                    }
                     break;
             }
 

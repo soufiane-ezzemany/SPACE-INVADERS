@@ -34,7 +34,9 @@
 
   <ItemGroup>
     <Resource Include="Font\BungeeInline-Regular.ttf" />
-    <Resource Include="Sounds\opening.mp3" />
+    <Content Include="Sounds\opening.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Resource Include="Sprites\Background\background.gif" />
     <Resource Include="Sprites\Background\background.png" />
     <Resource Include="Sprites\Background\Banner.png" />

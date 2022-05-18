@@ -17,7 +17,7 @@ namespace Space_Invaders.Logic
             double x = 500;
             Player spaceship = new Player(x, y, Canvas, this);
             AddItem(spaceship);
-            //PlayBackgroundMusic("opening.mp3");
+            PlayBackgroundMusic("opening.mp3");
         }
 
         protected override void RunWhenLoose()

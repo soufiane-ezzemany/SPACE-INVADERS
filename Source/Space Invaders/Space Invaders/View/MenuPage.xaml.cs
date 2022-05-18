@@ -25,7 +25,8 @@ namespace Space_Invaders.View
         {
             InitializeComponent();
             gamePage = new GamePage();
-            jeu = new SpaceInvader(gamePage.Canvas);  
+            jeu = new SpaceInvader(gamePage.Canvas);
+            jeu.Run();
 
         } 
 
@@ -33,7 +34,7 @@ namespace Space_Invaders.View
         {
                  
             this.NavigationService.Navigate(gamePage);
-            jeu.Run();
+            //jeu.Run();
         }
     }
 }

@@ -38,7 +38,12 @@ namespace Space_Invaders.View
             //Utilisation d'un systeme de navigation de Page    
             this.NavigationService.Navigate(gamePage);
         }
-
+        /// <summary>
+        /// Pour fermer le jeu
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        /// <author> Ismaïl Mesrouk </author>
         private void Exit(object sender, RoutedEventArgs e)
         {
             Application.Current.Shutdown();

@@ -16,6 +16,7 @@ namespace Space_Invaders.View
     /// <summary>
     /// Logique d'interaction pour GamePage.xaml
     /// </summary>
+    /// <author>Soufiane Ezzemany</author>
     public partial class GamePage : Page
     {
         public GamePage()
@@ -28,6 +29,7 @@ namespace Space_Invaders.View
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
+        /// <author> John Gaudry </author>
         private void PauseSetting(object sender, RoutedEventArgs e)
         {
             PauseGamePage pause = new PauseGamePage();

@@ -7,6 +7,10 @@ using System.Windows.Input;
 
 namespace Space_Invaders.Logic
 {
+    /// <summary>
+    /// Classe pour le joueur
+    /// </summary>
+    /// <author>Soufiane EZZEMANY</author>
     public class Player : GameItem, IAnimable, IKeyboardInteract
     {
         private int live = 3;
@@ -20,21 +24,42 @@ namespace Space_Invaders.Logic
             
         }
 
+        /// <summary>
+        /// Gérer les collisions
+        /// </summary>
+        /// <param name="other"></param>
+        /// <author> Soufiane Ezzemany</author>
         public override void CollideEffect(GameItem other)
         {
             throw new NotImplementedException();
         }
+
+        /// <summary>
+        /// Gérer les animations
+        /// </summary>
+        /// <param name="dt"></param>
+        /// <author> Soufiane Ezzemany</author>
 
         public void Animate(TimeSpan dt)
         {
             
         }
 
+        /// <summary>
+        /// Gérer le deplacement du joueur
+        /// </summary>
+        /// <param name="key"></param>
+        /// <author>Soufiane EZZEMANY</author>
         public void KeyUp(Key key)
         {
             this.Orientation = 0;
         }
 
+        /// <summary>
+        /// Gérer le déplacement du joueur
+        /// </summary>
+        /// <param name="key"></param>
+        /// <author> John Gaudry et Soufiane Ezzemany</author>
         public void KeyDown(Key key)
         {
             switch (key)

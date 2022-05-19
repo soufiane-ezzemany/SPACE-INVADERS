@@ -5,12 +5,20 @@ using System.Windows.Controls;
 
 namespace Space_Invaders.Logic
 {
+    /// <summary>
+    /// Classe Jeu
+    /// </summary>
+    /// <author> Soufiane Ezzemany</author>
     public class SpaceInvader : IUTGame.Game
     {
         public SpaceInvader(Canvas canvas) : base(canvas, "Sprites", "Sounds")
         {
 
         }
+        /// <summary>
+        /// Initialise les items
+        /// </summary>
+        /// <author> Soufiane Ezzemany </author>
         protected override void InitItems()
         {
             double y = 500;
@@ -20,11 +28,19 @@ namespace Space_Invaders.Logic
             PlayBackgroundMusic("opening.mp3");
         }
 
+        /// <summary>
+        /// Gére quand on perd
+        /// </summary>
+        /// <author> Soufiane Ezzemany </author>
         protected override void RunWhenLoose()
         {
             throw new NotImplementedException();
         }
 
+        /// <summary>
+        /// Gère quand on gagne
+        /// </summary>
+        /// <author> Soufiane Ezzemany </author>
         protected override void RunWhenWin()
         {
             throw new NotImplementedException();

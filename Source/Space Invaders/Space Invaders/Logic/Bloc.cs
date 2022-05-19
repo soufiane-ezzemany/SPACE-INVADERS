@@ -24,7 +24,7 @@ namespace Space_Invaders.Logic
         /// <author>Soufiane EZZEMANY</author>
         public override void CollideEffect(GameItem other)
         {
-            throw new NotImplementedException();
+            //à implemeter quand tous les deplacement seront gérés
         }
     }
 }

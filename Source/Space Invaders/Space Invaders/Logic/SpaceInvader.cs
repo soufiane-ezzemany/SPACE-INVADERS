@@ -36,9 +36,9 @@ namespace Space_Invaders.Logic
         /// <author>Ismail MESROUK</author>
         private void AddBlocs()
         {
-            Bloc b = new Bloc(150, 250, Canvas, this);
-            Bloc b1 = new Bloc(500, 250, Canvas, this);
-            Bloc b2 = new Bloc(850, 250, Canvas, this);
+            Bloc b = new Bloc(150, 460, Canvas, this);
+            Bloc b1 = new Bloc(500, 460, Canvas, this);
+            Bloc b2 = new Bloc(850, 460, Canvas, this);
 
             AddItem(b);
             AddItem(b1);

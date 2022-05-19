@@ -39,7 +39,6 @@ namespace Space_Invaders.View
         /// <param name="sender"></param>
         /// <param name="e"></param>
         /// <author>Soufiane EZZEMANY</author>
-
         private void PlayGame(object sender, RoutedEventArgs e)
         {
             //Utilisation d'un systeme de navigation de Page    

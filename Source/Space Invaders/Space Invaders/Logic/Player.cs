@@ -57,6 +57,17 @@ namespace Space_Invaders.Logic
         }
 
         /// <summary>
+        /// Pour deplace le joueur et avoir la possobilitéde l'utiliser en dehors
+        /// </summary>
+        /// <param name="x"></param>
+        /// <param name="y"></param>
+        /// <author>Soufiane EZZEMAY</author>
+        public void MovePlayer(double x, double y)
+        {
+            this.MoveXY(x, y);
+        }
+
+        /// <summary>
         /// Gérer le déplacement du joueur
         /// </summary>
         /// <param name="key"></param>
@@ -68,14 +79,14 @@ namespace Space_Invaders.Logic
                 case Key.Left:
                     if (this.Left > 0)
                     {
-                        MoveXY(-10, 0);
+                        MovePlayer(-10, 0);
                         this.Orientation = -20;
                     }
                      break;
                 case Key.Right:
                     if (this.Right < 1200)
                     {
-                        MoveXY(10, 0);
+                        MovePlayer(10, 0);
                         this.Orientation = 20;
                     }
                     break;

@@ -16,6 +16,7 @@ namespace Space_Invaders.View
     /// <summary>
     /// Logique d'interaction pour GameOverPage.xaml
     /// </summary>
+    /// <author> John Gaudry</author>
     public partial class GameOverPage : Page
     {
         public GameOverPage()
@@ -23,9 +24,15 @@ namespace Space_Invaders.View
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Naviguer pour retourner a la page Initiale (Menu)
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        /// <author> John Gaudry</author>
         private void Menu(object sender, RoutedEventArgs e)
         {
-            //Naviguer pour retourner a la page Initiale (Menu)
+            
             while (this.NavigationService.CanGoBack)
             {
                 this.NavigationService.RemoveBackEntry();

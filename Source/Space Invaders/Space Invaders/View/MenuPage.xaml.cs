@@ -38,5 +38,10 @@ namespace Space_Invaders.View
             //Utilisation d'un systeme de navigation de Page    
             this.NavigationService.Navigate(gamePage);
         }
+
+        private void Exit(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
     }
 }

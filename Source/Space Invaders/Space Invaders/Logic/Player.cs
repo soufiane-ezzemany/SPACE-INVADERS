@@ -14,6 +14,7 @@ namespace Space_Invaders.Logic
     public class Player : GameItem, IAnimable, IKeyboardInteract
     {
         private int live = 3;
+        private Canvas canvas;
 
         public override string TypeName => "SPACESHIP";
 
@@ -21,7 +22,7 @@ namespace Space_Invaders.Logic
         public Player(double x, double y, Canvas c, Game g)
             : base(x, y, c, g, "Decor/spaceship.png")
         {
-            
+            this.canvas = c;
         }
 
         /// <summary>
@@ -77,6 +78,12 @@ namespace Space_Invaders.Logic
                         MoveXY(10, 0);
                         this.Orientation = 20;
                     }
+                    break;
+                case Key.Space:
+                    //TODO : Improvement lancement missile
+                    Missile m = new Missile(this.Left + 90 , GameHeight  , canvas, this.Game);
+                    this.Game.AddItem(m);
+                    m.Animate(new TimeSpan(0,0,0,1));
                     break;
             }
 

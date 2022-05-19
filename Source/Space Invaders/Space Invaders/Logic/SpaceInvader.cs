@@ -18,14 +18,31 @@ namespace Space_Invaders.Logic
         /// <summary>
         /// Initialise les items
         /// </summary>
-        /// <author> Soufiane Ezzemany </author>
+        /// <author> Soufiane Ezzemany et Ismail MESROUK</author>
         protected override void InitItems()
         {
             double y = 500;
             double x = 500;
             Player spaceship = new Player(x, y, Canvas, this);
             AddItem(spaceship);
+            //Ajout des blocs
+            AddBlocs();
             PlayBackgroundMusic("opening.mp3");
+        }
+
+        /// <summary>
+        /// Initialisation Blocs
+        /// </summary>
+        /// <author>Ismail MESROUK</author>
+        private void AddBlocs()
+        {
+            Bloc b = new Bloc(150, 250, Canvas, this);
+            Bloc b1 = new Bloc(500, 250, Canvas, this);
+            Bloc b2 = new Bloc(850, 250, Canvas, this);
+
+            AddItem(b);
+            AddItem(b1);
+            AddItem(b2);
         }
 
         /// <summary>

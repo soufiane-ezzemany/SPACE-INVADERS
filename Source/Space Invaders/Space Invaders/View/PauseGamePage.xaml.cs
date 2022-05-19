@@ -38,5 +38,17 @@ namespace Space_Invaders.View
                 this.NavigationService.GoBack();
             }
         }
+
+        /// <summary>
+        /// Pour continuer le jeu
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        /// <author>Soufiane EZZEMANY</author>
+        private void Retour(object sender, RoutedEventArgs e)
+        {   
+            //Systeme de navigation gérer par le form WPF
+            this.NavigationService.GoBack();
+        }
     }
 }

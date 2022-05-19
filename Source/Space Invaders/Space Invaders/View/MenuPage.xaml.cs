@@ -24,6 +24,7 @@ namespace Space_Invaders.View
         public MenuPage()
         {
             InitializeComponent();
+            
             //Creation d'une page pour le jeu
             gamePage = new GamePage();
             //Initialisation du jeu
@@ -32,6 +33,12 @@ namespace Space_Invaders.View
             jeu.Run();
 
         } 
+        /// <summary>
+        /// Lancer le jeu
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        /// <author>Soufiane EZZEMANY</author>
 
         private void PlayGame(object sender, RoutedEventArgs e)
         {

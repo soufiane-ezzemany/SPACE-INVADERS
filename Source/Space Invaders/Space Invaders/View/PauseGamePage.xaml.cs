@@ -16,6 +16,7 @@ namespace Space_Invaders.View
     /// <summary>
     /// Logique d'interaction pour PauseGamePage.xaml
     /// </summary>
+    /// <author>John Gaudry</author>
     public partial class PauseGamePage : Page
     {
         public PauseGamePage()
@@ -23,6 +24,12 @@ namespace Space_Invaders.View
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Retour au menu
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        /// <author> John Gaudry</author>
         private void Menu(object sender, RoutedEventArgs e)
         {
             while (this.NavigationService.CanGoBack)

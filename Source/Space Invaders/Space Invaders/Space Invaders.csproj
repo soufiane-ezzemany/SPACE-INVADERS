@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <None Remove="Font\BungeeInline-Regular.ttf" />
+    <None Remove="Sounds\laser-sound.mp3" />
     <None Remove="Sounds\opening.mp3" />
     <None Remove="Sprites\Background\background.gif" />
     <None Remove="Sprites\Background\background.png" />
@@ -41,6 +42,9 @@
 
   <ItemGroup>
     <Resource Include="Font\BungeeInline-Regular.ttf" />
+    <Content Include="Sounds\laser-sound.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Sounds\opening.mp3">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

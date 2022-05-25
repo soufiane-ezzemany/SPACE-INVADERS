@@ -109,7 +109,7 @@ namespace Space_Invaders.Logic
                     //TODO : Improvement lancement missile
                     Missile m = new Missile(this.Left + 90 , this.Top+ 40  , canvas, this.Game);
                     this.Game.AddItem(m);
-                    m.Animate(new TimeSpan(0,0,0,1));
+                    //m.Animate(new TimeSpan(0,0,0,0,1));
                     break;
             }
             //mouvements.Add(key);

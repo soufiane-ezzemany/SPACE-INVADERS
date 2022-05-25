@@ -17,14 +17,14 @@ namespace Space_Invaders.Logic
         {
         }
 
-        public override string TypeName => "MISIILE";
+        public override string TypeName => "MISSIILE";
         
         /// <summary>
         /// gestion de la collision
         /// </summary>
         /// <author>Soufiane EZZEMANY</author>
         public override void CollideEffect(GameItem other)
-        {
+        {   
             
         }
 
@@ -34,7 +34,7 @@ namespace Space_Invaders.Logic
         /// <author>Soufiane EZZEMANY</author>
         public void Animate(TimeSpan dt)
         {
-            if (Bottom > GameHeight)
+            if (this.Top <= 0)
             {
                 Game.RemoveItem(this);
             }

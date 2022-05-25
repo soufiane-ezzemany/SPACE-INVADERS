@@ -12,19 +12,40 @@ namespace Space_Invaders.Logic
     /// <author>Soufiane EZZEMANY</author>
     public class Bloc : GameItem
     {
-        public Bloc(double x, double y, Canvas canvas, Game game) : base(x, y, canvas, game, "Blocks/block1.png")
+        int life;
+        public Bloc(double x, double y, Canvas canvas, Game game) : base(x, y, canvas, game, "Blocks/block3.png")
         {
+            life = 3;
         }
 
-        public override string TypeName => throw new NotImplementedException();
+        public override string TypeName => "BLOC";
 
         /// <summary>
         /// Gére la Collision
         /// </summary>
         /// <author>Soufiane EZZEMANY</author>
         public override void CollideEffect(GameItem other)
-        {
-            //à implemeter quand tous les deplacement seront gérés
+        {   
+
+            if (this.life > 1)
+            {
+                if (other.TypeName == "MISSIILE")
+                {
+                    string spriteName = "Blocks/block" + (life-1).ToString() +".png";
+                    this.ChangeSprite(spriteName);
+                    this.Game.RemoveItem(other);
+                    this.life--;
+                }
+            }
+            else
+            {   
+                if(other != null)
+                {
+                    this.Game.RemoveItem(other);
+                }
+                this.Game.RemoveItem(this);
+            }
+            
         }
     }
 }

@@ -47,9 +47,9 @@
     <Resource Include="Sprites\Background\background.gif" />
     <Resource Include="Sprites\Background\background.png" />
     <Resource Include="Sprites\Background\Banner.png" />
-    <Resource Include="Sprites\Blocks\block1.png" />
-    <Resource Include="Sprites\Blocks\block2.png" />
     <Resource Include="Sprites\Blocks\block3.png" />
+    <Resource Include="Sprites\Blocks\block2.png" />
+    <Resource Include="Sprites\Blocks\block1.png" />
     <Resource Include="Sprites\Decor\alienb.png" />
     <Resource Include="Sprites\Decor\alienr.png" />
     <Resource Include="Sprites\Decor\alienv.png" />

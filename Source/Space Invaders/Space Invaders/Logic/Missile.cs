@@ -12,7 +12,7 @@ namespace Space_Invaders.Logic
     /// <author>Soufiane EZZEMANY</author>
     public class Missile : GameItem, IAnimable
     {
-        private double vitesse = 150;
+        private double vitesse = 15;
         public Missile(double x, double y, Canvas canvas, Game game ) : base(x, y, canvas, game, "missile.png")
         {
         }
@@ -39,7 +39,7 @@ namespace Space_Invaders.Logic
                 Game.RemoveItem(this);
             }
 
-            MoveDA(this.vitesse * dt.TotalSeconds, -90);
+            MoveDA(this.vitesse , -90);
         }
     }
 }

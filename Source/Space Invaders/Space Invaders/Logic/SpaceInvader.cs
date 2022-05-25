@@ -21,8 +21,8 @@ namespace Space_Invaders.Logic
         /// <author> Soufiane Ezzemany et Ismail MESROUK</author>
         protected override void InitItems()
         {
-            double y = 500;
-            double x = 500;
+            double y = Canvas.Height;
+            double x = Canvas.Width;
             Player spaceship = new Player(x, y, Canvas, this);
             AddItem(spaceship);
             //Ajout des blocs

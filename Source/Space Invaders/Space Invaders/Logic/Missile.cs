@@ -15,7 +15,7 @@ namespace Space_Invaders.Logic
         private double vitesse = 15;
         public Missile(double x, double y, Canvas canvas, Game game ) : base(x, y, canvas, game, "missile.png")
         {
-            PlaySound("laser-sound.mp3");
+            
         }
 
         public override string TypeName => "MISSIILE";

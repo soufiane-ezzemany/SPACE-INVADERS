@@ -15,7 +15,7 @@ namespace Space_Invaders.Logic
     {
         //private int live = 3;
         private Canvas canvas;
-        //private List<Key> mouvements;
+        private List<Key> mouvements;
 
         public override string TypeName => "SPACESHIP";
 
@@ -26,7 +26,7 @@ namespace Space_Invaders.Logic
             this.canvas = c;
             ChangeScale(0.8, 0.8);
 
-            //mouvements = new List<Key>();
+            mouvements = new List<Key>();
         }
 
         /// <summary>
@@ -47,13 +47,26 @@ namespace Space_Invaders.Logic
 
         public void Animate(TimeSpan dt)
         {
-            /*foreach(Key m in mouvements)
+            foreach(Key m in mouvements)
             {
                 switch (m)
                 {
-                   
+                    case Key.Left:
+                        if (this.Left > 0)
+                        {
+                            MovePlayer(-10, 0);
+                            this.Orientation = -20;
+                        }
+                        break;
+                    case Key.Right:
+                        if (this.Right < 1200)
+                        {
+                            MovePlayer(10, 0);
+                            this.Orientation = 20;
+                        }
+                        break;
                 }
-            }*/
+            }
             
         }
 
@@ -64,7 +77,9 @@ namespace Space_Invaders.Logic
         /// <author>Soufiane EZZEMANY</author>
         public void KeyUp(Key key)
         {
-            //mouvements.Remove(key);
+            if(mouvements.Contains(key))
+                mouvements.Remove(key);
+           
             this.Orientation = 0;
             
         }
@@ -87,25 +102,14 @@ namespace Space_Invaders.Logic
         /// <author> John Gaudry et Soufiane Ezzemany</author>
         public void KeyDown(Key key)
         {
-            
+            if (!mouvements.Contains(key))
+                mouvements.Add(key);
             
             switch (key)
             {
-                case Key.Left:
-                    if (this.Left > 0)
-                    {
-                        MovePlayer(-10, 0);
-                        this.Orientation = -20;
-                    }
-                    break;
-                case Key.Right:
-                    if (this.Right < 1200)
-                    {
-                        MovePlayer(10, 0);
-                        this.Orientation = 20;
-                    }
-                    break;
+                
                 case Key.Space:
+                    PlaySound("laser-sound.mp3");
                     //TODO : Improvement lancement missile
                     Missile m = new Missile(this.Left + 90 , this.Top+ 40  , canvas, this.Game);
                     this.Game.AddItem(m);

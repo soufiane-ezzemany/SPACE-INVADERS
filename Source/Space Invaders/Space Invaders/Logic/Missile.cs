@@ -13,6 +13,7 @@ namespace Space_Invaders.Logic
     public class Missile : GameItem, IAnimable
     {
         private double vitesse = 15;
+        private int numberInvader = 36;
         public Missile(double x, double y, Canvas canvas, Game game ) : base(x, y, canvas, game, "missile.png")
         {
             
@@ -28,18 +29,26 @@ namespace Space_Invaders.Logic
         {   
             if(other.TypeName == "AlienRed")
             {
+                numberInvader--;
                 Game.RemoveItem(other);
                 Game.RemoveItem(this);
             }
             else if (other.TypeName == "AlienBlue")
             {
+                numberInvader--;
                 Game.RemoveItem(other);
                 Game.RemoveItem(this);
             }
             else if (other.TypeName == "AlienGreen")
             {
+                numberInvader--;
                 Game.RemoveItem(other);
                 Game.RemoveItem(this);
+            }
+
+            if (numberInvader == 0)
+            {
+                this.Game.Win();
             }
         }
 

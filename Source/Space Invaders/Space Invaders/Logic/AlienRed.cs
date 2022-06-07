@@ -21,7 +21,7 @@ namespace Space_Invaders.Logic
         /// <param name="game"></param>
         /// <param name="spriteName"></param>
         /// <author>MESROUK Ismaïl</author>
-        public AlienRed(double x, double y, Canvas canvas, Game game, string spriteName = "") : base(x, y, canvas, game, spriteName)
+        public AlienRed(double x, double y, Canvas canvas, Game game) : base(x, y, canvas, game, "Aliens/alienr.png")
         {
         }
 
@@ -35,7 +35,7 @@ namespace Space_Invaders.Logic
         ///<author>MESROUK Ismaïl</author>
         public override void CollideEffect(GameItem other)
         {
-            
+           
         }
     }
 }

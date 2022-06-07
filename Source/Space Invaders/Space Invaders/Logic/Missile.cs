@@ -26,7 +26,11 @@ namespace Space_Invaders.Logic
         /// <author>Soufiane EZZEMANY</author>
         public override void CollideEffect(GameItem other)
         {   
-            
+            if(other.TypeName == "AlienRed")
+            {
+                Game.RemoveItem(other);
+                Game.RemoveItem(this);
+            }
         }
 
         /// <summary>

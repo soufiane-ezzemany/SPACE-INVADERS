@@ -18,7 +18,7 @@ namespace Space_Invaders.Logic
             
         }
 
-        public override string TypeName => "MISSIILE";
+        public override string TypeName => "MISSIILE"; 
         
         /// <summary>
         /// gestion de la collision

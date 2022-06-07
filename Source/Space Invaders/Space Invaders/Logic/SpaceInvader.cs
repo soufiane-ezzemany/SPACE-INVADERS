@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Space_Invaders.View;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows.Controls;
@@ -75,7 +76,8 @@ namespace Space_Invaders.Logic
         /// <author> Soufiane Ezzemany </author>
         protected override void RunWhenWin()
         {
-            throw new NotImplementedException();
+            GameWinWindow gamewin = new GameWinWindow();
+            gamewin.Show();
         }
     }
 }

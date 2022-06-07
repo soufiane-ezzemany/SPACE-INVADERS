@@ -12,6 +12,8 @@ namespace Space_Invaders.Logic
     /// <author> Soufiane Ezzemany</author>
     public class SpaceInvader : IUTGame.Game
     {
+        private Player spaceship;
+        public static int numInvaders = 36;
         public SpaceInvader(Canvas canvas) : base(canvas, "Sprites", "Sounds")
         {
 
@@ -24,7 +26,7 @@ namespace Space_Invaders.Logic
         {
             double y = 500;
             double x = 500;
-            Player spaceship = new Player(x, y, Canvas, this);
+            spaceship = new Player(x, y, Canvas, this);
             AddItem(spaceship);
             //Ajout des blocs
             AddBlocs();

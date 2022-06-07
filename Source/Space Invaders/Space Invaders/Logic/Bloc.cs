@@ -43,7 +43,7 @@ namespace Space_Invaders.Logic
                 {
                     this.Game.RemoveItem(other);
                 }
-                this.Game.RemoveItem(this);
+                Game.RemoveItem(this);
             }
             
         }

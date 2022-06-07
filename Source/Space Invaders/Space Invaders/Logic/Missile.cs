@@ -13,10 +13,10 @@ namespace Space_Invaders.Logic
     public class Missile : GameItem, IAnimable
     {
         private double vitesse = 15;
-        private int numberInvader = 36;
+
         public Missile(double x, double y, Canvas canvas, Game game ) : base(x, y, canvas, game, "missile.png")
         {
-            
+
         }
 
         public override string TypeName => "MISSIILE"; 
@@ -27,29 +27,19 @@ namespace Space_Invaders.Logic
         /// <author>Ismail Mesrouk</author>
         public override void CollideEffect(GameItem other)
         {   
-            if(other.TypeName == "AlienRed")
+            if(SpaceInvader.numInvaders >= 1)
             {
-                numberInvader--;
-                Game.RemoveItem(other);
-                Game.RemoveItem(this);
+                if (other.TypeName == "AlienRed" || (other.TypeName == "AlienBlue") || (other.TypeName == "AlienGreen"))
+                {
+                    Game.RemoveItem(other);
+                    Game.RemoveItem(this);
+                    SpaceInvader.numInvaders--;
+                }
             }
-            else if (other.TypeName == "AlienBlue")
-            {
-                numberInvader--;
-                Game.RemoveItem(other);
-                Game.RemoveItem(this);
-            }
-            else if (other.TypeName == "AlienGreen")
-            {
-                numberInvader--;
-                Game.RemoveItem(other);
-                Game.RemoveItem(this);
-            }
-
-            if (numberInvader == 0)
+            else
             {
                 this.Game.Win();
-            }
+            }          
         }
 
         /// <summary>

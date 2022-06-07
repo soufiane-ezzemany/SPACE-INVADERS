@@ -20,7 +20,7 @@ namespace Space_Invaders.Logic
         /// <param name="canvas"></param>
         /// <param name="game"></param>
         /// <param name="spriteName"></param>
-        public AlienBlue(double x, double y, Canvas canvas, Game game, string spriteName = "") : base(x, y, canvas, game, spriteName)
+        public AlienBlue(double x, double y, Canvas canvas, Game game) : base(x, y, canvas, game, "Aliens/alienb.png")
         {
         }
 

@@ -11,7 +11,9 @@
     <None Remove="Font\BungeeInline-Regular.ttf" />
     <None Remove="Sounds\laser-sound.mp3" />
     <None Remove="Sounds\opening.mp3" />
+    <None Remove="Sprites\Aliens\alienb.png" />
     <None Remove="Sprites\Aliens\alienr.png" />
+    <None Remove="Sprites\Aliens\alienv.png" />
     <None Remove="Sprites\Background\background.gif" />
     <None Remove="Sprites\Background\background.png" />
     <None Remove="Sprites\Background\Banner.png" />
@@ -49,7 +51,9 @@
     <Content Include="Sounds\opening.mp3">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Resource Include="Sprites\Aliens\alienb.png" />
     <Resource Include="Sprites\Aliens\alienr.png" />
+    <Resource Include="Sprites\Aliens\alienv.png" />
     <Resource Include="Sprites\Background\background.gif" />
     <Resource Include="Sprites\Background\background.png" />
     <Resource Include="Sprites\Background\Banner.png" />

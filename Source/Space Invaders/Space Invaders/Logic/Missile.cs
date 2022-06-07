@@ -31,6 +31,16 @@ namespace Space_Invaders.Logic
                 Game.RemoveItem(other);
                 Game.RemoveItem(this);
             }
+            if (other.TypeName == "AlienBlue")
+            {
+                Game.RemoveItem(other);
+                Game.RemoveItem(this);
+            }
+            if (other.TypeName == "AlienGreen")
+            {
+                Game.RemoveItem(other);
+                Game.RemoveItem(this);
+            }
         }
 
         /// <summary>

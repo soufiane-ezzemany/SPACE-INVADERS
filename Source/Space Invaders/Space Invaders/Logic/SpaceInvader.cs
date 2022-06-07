@@ -28,6 +28,9 @@ namespace Space_Invaders.Logic
             //Ajout des blocs
             AddBlocs();
             AddItem(new AlienRed(200,200, Canvas, this));
+            AddItem(new AlienBlue(300, 200, Canvas, this));
+            AddItem(new AlienGreen(400, 200, Canvas, this));
+
             PlayBackgroundMusic("opening.mp3");
         }
 

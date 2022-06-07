@@ -13,6 +13,7 @@ namespace Space_Invaders.Logic
     /// <author> John Gaudry et Soufiane Ezzemany</author>
     abstract public class Alien : GameItem, IAnimable
     {
+        private Canvas canvas;
         private double angle = 0;
         /// <summary>
         /// Constructeur Alien hérité de GameItem
@@ -35,6 +36,14 @@ namespace Space_Invaders.Logic
         /// <author>John Gaudry</author>
         public void Animate(TimeSpan dt)
         {
+            Random r = new Random();
+            int rdm = r.Next(1, 11);
+
+            if(rdm == 6)
+            {
+                MissileAlien m = new MissileAlien(this.Left + 20, this.Bottom + 5, canvas, this.Game);
+                Game.AddItem(m);
+            }
 
             if (Left < 0)
             {

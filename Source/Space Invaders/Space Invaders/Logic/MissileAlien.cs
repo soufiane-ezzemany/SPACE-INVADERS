@@ -9,7 +9,7 @@ namespace Space_Invaders.Logic
     public class MissileAlien : GameItem, IAnimable
     {
         private double vitesse = 10;
-        public MissileAlien(double x, double y, Canvas canvas, Game game) : base(x, y, canvas, game, "missile.png")
+        public MissileAlien(double x, double y, Canvas canvas, Game game) : base(x, y, canvas, game, "missileAlien.png")
         {
 
         }
@@ -24,10 +24,10 @@ namespace Space_Invaders.Logic
         {
             if (other.TypeName == "Player")
             {
-                Game.Loose();
+                
                 Game.RemoveItem(this);
             }
-           
+   
         }
 
         /// <summary>
@@ -36,7 +36,7 @@ namespace Space_Invaders.Logic
         /// <author>Ismail Mesrouk</author>
         public void Animate(TimeSpan dt)
         {
-            if (this.Bottom <= 0)
+            if (this.Bottom >= 750)
             {
                 Game.RemoveItem(this);
             }
@@ -45,4 +45,4 @@ namespace Space_Invaders.Logic
         }
     }
 }
-}
+

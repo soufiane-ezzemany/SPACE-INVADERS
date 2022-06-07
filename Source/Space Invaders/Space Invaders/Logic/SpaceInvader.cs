@@ -67,7 +67,8 @@ namespace Space_Invaders.Logic
         /// <author> Soufiane Ezzemany </author>
         protected override void RunWhenLoose()
         {
-            System.Windows.MessageBox.Show("Tu as perdu");
+            GameLooseWindow looseWindow = new GameLooseWindow();
+            looseWindow.Show();
         }
 
         /// <summary>

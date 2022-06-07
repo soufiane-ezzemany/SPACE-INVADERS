@@ -27,6 +27,7 @@ namespace Space_Invaders.Logic
             AddItem(spaceship);
             //Ajout des blocs
             AddBlocs();
+            AddItem(new AlienRed(200,200, Canvas, this));
             PlayBackgroundMusic("opening.mp3");
         }
 

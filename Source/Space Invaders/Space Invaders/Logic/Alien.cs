@@ -21,7 +21,7 @@ namespace Space_Invaders.Logic
         /// <param name="game"></param>
         /// <param name="spriteName"></param>
         /// <author> Gaudry John</author>
-        protected Alien(double x, double y, Canvas canvas, Game game, string spriteName = "") : base(x, y, canvas, game, spriteName)
+        protected Alien(double x, double y, Canvas canvas, Game game, string spriteName) : base(x, y, canvas, game, spriteName)
         {
 
         }

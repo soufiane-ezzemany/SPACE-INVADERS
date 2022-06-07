@@ -50,6 +50,7 @@ namespace Space_Invaders.Logic
         /// <summary>
         /// Initialisation des aliens
         /// </summary>
+        /// <author>Ismail MESROUK</author>
         private void AddAliens()
         {
             for(int i=1; i <= 12; i++)

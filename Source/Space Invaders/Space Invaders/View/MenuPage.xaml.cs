@@ -29,9 +29,7 @@ namespace Space_Invaders.View
             gamePage = new GamePage();
             //Initialisation du jeu
             jeu = new SpaceInvader(gamePage.Canvas);
-            //Lancer le jeu
-            jeu.Run();
-
+            jeu.PlayBackgroundMusic("opening.mp3");
         } 
         /// <summary>
         /// Lancer le jeu
@@ -41,6 +39,8 @@ namespace Space_Invaders.View
         /// <author>Soufiane EZZEMANY</author>
         private void PlayGame(object sender, RoutedEventArgs e)
         {
+            //Lancer le jeu
+            jeu.Run();
             //Utilisation d'un systeme de navigation de Page    
             this.NavigationService.Navigate(gamePage);
         }

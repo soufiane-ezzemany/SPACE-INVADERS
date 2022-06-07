@@ -40,17 +40,17 @@ namespace Space_Invaders.Logic
             {
                 angle = 0;
                 Left = 0;
-                MoveXY(0, 10);
+                MoveXY(0, 5);
                 // Rebondir();
             }
             else if (Right > 1200)
             {
                 angle = -180;
                 Right = 1200;
-                MoveXY(0, 10);
+                MoveXY(0, 5);
             }
 
-            MoveDA(10, angle);
+            MoveDA(5, angle);
 
         }
 

@@ -29,7 +29,6 @@ namespace Space_Invaders.Logic
             AddBlocs();
             //Ajout des aliens
             AddAliens();
-            PlayBackgroundMusic("opening.mp3");
         }
 
         /// <summary>

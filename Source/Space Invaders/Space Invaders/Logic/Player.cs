@@ -13,10 +13,10 @@ namespace Space_Invaders.Logic
     /// <author>Soufiane EZZEMANY</author>
     public class Player : GameItem, IAnimable, IKeyboardInteract
     {
-        //private int live = 3;
+        private int life = 3;
         private Canvas canvas;
         private List<Key> mouvements;
-
+        private Heart heart;
         public override string TypeName => "PLAYER";
 
 
@@ -25,18 +25,32 @@ namespace Space_Invaders.Logic
         {
             this.canvas = c;
             ChangeScale(0.8, 0.8);
-
             mouvements = new List<Key>();
+            heart = new Heart(0, 0, c, g);
+            Game.AddItem(heart);
         }
 
         /// <summary>
         /// Gérer les collisions
         /// </summary>
         /// <param name="other"></param>
-        /// <author> Soufiane Ezzemany</author>
+        /// <author> Soufiane Ezzemany et John Gaudry</author>
         public override void CollideEffect(GameItem other)
         {
-            //à implementer quand tous les dèplacements seront gérés
+            if (other.TypeName == "MISSIILEALIEN")
+            {
+                if( life > 1 )
+                {
+                    life--;
+                    Game.RemoveItem(other);
+                    heart.ChangeStatus(life);
+                }
+                else
+                {
+                    Game.Loose();
+                }
+                
+            }            
         }
 
         /// <summary>

@@ -66,7 +66,7 @@ namespace Space_Invaders.Logic
         /// <author> Soufiane Ezzemany </author>
         protected override void RunWhenLoose()
         {
-            throw new NotImplementedException();
+            System.Windows.MessageBox.Show("Tu as perdu");
         }
 
         /// <summary>

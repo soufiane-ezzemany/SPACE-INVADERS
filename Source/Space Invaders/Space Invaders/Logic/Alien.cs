@@ -15,6 +15,7 @@ namespace Space_Invaders.Logic
     {
         private Canvas canvas;
         private double angle = 0;
+        private TimeSpan timeToShoot;
         /// <summary>
         /// Constructeur Alien hérité de GameItem
         /// </summary>
@@ -23,10 +24,13 @@ namespace Space_Invaders.Logic
         /// <param name="canvas"></param>
         /// <param name="game"></param>
         /// <param name="spriteName"></param>
-        /// <author> Gaudry John</author>
+        /// <author> Gaudry John et Soufiane Ezzemany et Ismaïl Mesrouk</author>
         protected Alien(double x, double y, Canvas canvas, Game game, string spriteName) : base(x, y, canvas, game, spriteName)
-        {
+        {   
             this.canvas = canvas;
+            //Initialisation aléatoire de l'intervalle avant de tirer
+            Random r = new Random();
+            this.timeToShoot = new TimeSpan(0, 0, r.Next(3,15));
         }
 
         /// <summary>
@@ -36,13 +40,16 @@ namespace Space_Invaders.Logic
         /// <author>John Gaudry</author>
         public void Animate(TimeSpan dt)
         {
-            Random r = new Random();
-            int rdm = r.Next(1, 11);
-
-            if(rdm == 6)
+            timeToShoot = timeToShoot - dt;
+            if (timeToShoot.TotalMilliseconds < 0)
             {
-                MissileAlien m = new MissileAlien(this.Left + 20, this.Bottom + 5, canvas, this.Game);
-                Game.AddItem(m);
+                // Tir de missile
+                MissileAlien b = new MissileAlien(this.Left + 20, this.Bottom + 5, canvas, this.Game);
+                Game.AddItem(b);
+                // Réinitialisation intervalle de temps
+                Random r = new Random();
+                int ms = r.Next(5000, 20000);
+                timeToShoot = new TimeSpan(0, 0, 0, 0, ms);
             }
 
             if (Left < 0)

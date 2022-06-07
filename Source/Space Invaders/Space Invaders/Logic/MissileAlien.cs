@@ -24,7 +24,6 @@ namespace Space_Invaders.Logic
         {
             if (other.TypeName == "Player")
             {
-                
                 Game.RemoveItem(this);
             }
    

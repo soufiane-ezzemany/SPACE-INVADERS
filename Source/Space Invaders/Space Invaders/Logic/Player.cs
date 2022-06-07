@@ -17,7 +17,7 @@ namespace Space_Invaders.Logic
         private Canvas canvas;
         private List<Key> mouvements;
 
-        public override string TypeName => "SPACESHIP";
+        public override string TypeName => "PLAYER";
 
 
         public Player(double x, double y, Canvas c, Game g)

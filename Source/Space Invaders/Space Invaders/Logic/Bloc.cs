@@ -12,10 +12,10 @@ namespace Space_Invaders.Logic
     /// <author>Soufiane EZZEMANY</author>
     public class Bloc : GameItem
     {
-        int life;
-        public Bloc(double x, double y, Canvas canvas, Game game) : base(x, y, canvas, game, "Blocks/block3.png")
+        private int life;
+        public Bloc(double x, double y, Canvas canvas, Game game) : base(x, y, canvas, game, "Blocks/bloc9.png")
         {
-            life = 3;
+            life = 9;
         }
 
         public override string TypeName => "BLOC";
@@ -23,15 +23,15 @@ namespace Space_Invaders.Logic
         /// <summary>
         /// Gére la Collision
         /// </summary>
-        /// <author>Soufiane EZZEMANY</author>
+        /// <author>Soufiane EZZEMANY ET John GAUDRY</author>
         public override void CollideEffect(GameItem other)
         {   
 
             if (this.life > 1)
             {
-                if (other.TypeName == "MISSIILE")
+                if (other.TypeName == "MISSIILE" || other.TypeName == "MISSIILEALIEN")
                 {
-                    string spriteName = "Blocks/block" + (life-1).ToString() +".png";
+                    string spriteName = "Blocks/bloc" + (life-1).ToString() +".png";
                     this.ChangeSprite(spriteName);
                     this.Game.RemoveItem(other);
                     this.life--;
@@ -39,7 +39,7 @@ namespace Space_Invaders.Logic
             }
             else
             {   
-                if(other != null)
+                if(other != null && other.TypeName != "PLAYER")
                 {
                     this.Game.RemoveItem(other);
                 }

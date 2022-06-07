@@ -20,7 +20,7 @@ namespace PetitJeu
             get { return score; }
             set
             {
-                score = Math.Min(10,value);
+                score += value;
             }
         }
         

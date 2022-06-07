@@ -26,6 +26,7 @@
     <None Remove="Sprites\Decor\spaceship.png" />
     <None Remove="Sprites\Icon\pauseIcon.png" />
     <None Remove="Sprites\missile.png" />
+    <None Remove="Sprites\missileAlien.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -66,6 +67,7 @@
     <Resource Include="Sprites\Decor\spaceship.png" />
     <Resource Include="Sprites\Icon\pauseIcon.png" />
     <Resource Include="Sprites\missile.png" />
+    <Resource Include="Sprites\missileAlien.png" />
   </ItemGroup>
 
 </Project>

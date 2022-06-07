@@ -27,10 +27,8 @@ namespace Space_Invaders.Logic
             AddItem(spaceship);
             //Ajout des blocs
             AddBlocs();
-            AddItem(new AlienRed(200,200, Canvas, this));
-            AddItem(new AlienBlue(300, 200, Canvas, this));
-            AddItem(new AlienGreen(400, 200, Canvas, this));
-
+            //Ajout des aliens
+            AddAliens();
             PlayBackgroundMusic("opening.mp3");
         }
 
@@ -47,6 +45,19 @@ namespace Space_Invaders.Logic
             AddItem(b);
             AddItem(b1);
             AddItem(b2);
+        }
+
+        /// <summary>
+        /// Initialisation des aliens
+        /// </summary>
+        private void AddAliens()
+        {
+            for(int i=1; i <= 12; i++)
+            {
+                AddItem(new AlienRed(30 +i*80, 110, Canvas, this));
+                AddItem(new AlienBlue(30+ i*80, 165, Canvas, this));
+                AddItem(new AlienGreen(30+ i*80, 220, Canvas, this));
+            }
         }
 
         /// <summary>

@@ -52,10 +52,10 @@ namespace Space_Invaders.Logic
         /// <author>Ismail MESROUK</author>
         private void AddAliens()
         {
-            for(int i=1; i <= 12; i++)
+            for(int i=1; i <= 1; i++)
             {
-                AddItem(new AlienRed(30 +i*80, 110, Canvas, this));
-                AddItem(new AlienBlue(30+ i*80, 165, Canvas, this));
+                //AddItem(new AlienRed(30 +i*80, 110, Canvas, this));
+                //AddItem(new AlienBlue(30+ i*80, 165, Canvas, this));
                 AddItem(new AlienGreen(30+ i*80, 220, Canvas, this));
             }
         }

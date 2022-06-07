@@ -26,7 +26,7 @@ namespace Space_Invaders.Logic
         /// <author> Gaudry John</author>
         protected Alien(double x, double y, Canvas canvas, Game game, string spriteName) : base(x, y, canvas, game, spriteName)
         {
-
+            this.canvas = canvas;
         }
 
         /// <summary>

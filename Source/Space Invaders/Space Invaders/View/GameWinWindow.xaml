@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Space_Invaders.View"
         mc:Ignorable="d" 
-        d:DesignHeight="750" d:DesignWidth="1200"
+        d:DesignHeight="550" d:DesignWidth="750"
         Title="GameWin">
 
     <Grid>

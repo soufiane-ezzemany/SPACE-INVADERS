@@ -52,8 +52,6 @@ namespace Space_Invaders.Logic
 
             MoveDA(10, angle);
 
-
-
         }
 
 

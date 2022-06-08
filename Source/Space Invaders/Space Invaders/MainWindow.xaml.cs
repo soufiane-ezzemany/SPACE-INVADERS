@@ -47,6 +47,7 @@ namespace Space_Invaders
             //Lancer le jeu
             jeu.Run();
             gamePage.Show();
+            this.Hide();
             
         }
         /// <summary>
@@ -62,7 +63,8 @@ namespace Space_Invaders
 
         private void Tutorial(object sender, RoutedEventArgs e)
         {
-
+            Tutorial t = new Tutorial();
+            t.Show();
         }
     }
 }

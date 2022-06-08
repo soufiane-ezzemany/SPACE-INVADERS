@@ -24,7 +24,7 @@ namespace Space_Invaders.Logic
         /// <summary>
         /// gestion de la collision
         /// </summary>
-        /// <author>Ismail Mesrouk</author>
+        /// <author>Ismail Mesrouk et Soufiane EZZEMANY</author>
         public override void CollideEffect(GameItem other)
         {   
             if(SpaceInvader.numInvaders >= 1)

@@ -19,7 +19,11 @@ namespace Space_Invaders.Logic
         {
             
         }
-
+        /// <summary>
+        /// change de sprite selon la vie
+        /// </summary>
+        /// <param name="n">nombre de vie</param>
+        /// <author>John GAUDRY</author>
         public void ChangeStatus(int n)
         {
             string spriteName = "Hearts/heart" + (n).ToString() + ".png";

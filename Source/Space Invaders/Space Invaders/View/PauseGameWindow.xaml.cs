@@ -8,32 +8,39 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Space_Invaders.View
 {
     /// <summary>
-    /// Logique d'interaction pour GamePage.xaml
+    /// Logique d'interaction pour PauseGameWindow.xaml
     /// </summary>
-    /// <author>Soufiane Ezzemany</author>
-    public partial class GamePage : Page
+    public partial class PauseGameWindow : Window
     {
-        public GamePage()
+        public PauseGameWindow()
         {
             InitializeComponent();
         }
-
         /// <summary>
-        /// Permet l'ouverture via naviguation de la page Pause
+        /// Retour au menu
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        /// <author> John Gaudry </author>
-        private void PauseSetting(object sender, RoutedEventArgs e)
+        /// <author> John Gaudry</author>
+        private void Menu(object sender, RoutedEventArgs e)
         {
-            PauseGamePage pause = new PauseGamePage();
-            this.NavigationService.Navigate(pause);
+            
+        }
+
+        /// <summary>
+        /// Pour continuer le jeu
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        /// <author>Soufiane EZZEMANY</author>
+        private void Retour(object sender, RoutedEventArgs e)
+        {
+            
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Space_Invaders.Logic;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -30,8 +31,8 @@ namespace Space_Invaders.View
         /// <author> John Gaudry </author>
         private void PauseSetting(object sender, RoutedEventArgs e)
         {
-            //PauseGameWindow pause = new PauseGamePage();
-            //pause.Show();
+            PauseGameWindow pause = new PauseGameWindow();
+            pause.Show();
         }
     }
 }

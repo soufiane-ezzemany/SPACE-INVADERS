@@ -27,7 +27,7 @@ namespace Space_Invaders.Logic
         public override void CollideEffect(GameItem other)
         {   
 
-            if (this.life > 1)
+            if (this.life >= 1)
             {
                 if (other.TypeName == "MISSIILE" || other.TypeName == "MISSIILEALIEN")
                 {

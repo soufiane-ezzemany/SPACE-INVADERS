@@ -14,6 +14,7 @@ namespace Space_Invaders.Logic
     {
         private Player spaceship;
         public static int numInvaders = 36;
+        public static int score = 0;
         public SpaceInvader(Canvas canvas) : base(canvas, "Sprites", "Sounds")
         {
 
@@ -69,7 +70,7 @@ namespace Space_Invaders.Logic
         /// <author> Soufiane Ezzemany </author>
         protected override void RunWhenLoose()
         {
-            GameLooseWindow looseWindow = new GameLooseWindow();
+            GameLooseWindow looseWindow = new GameLooseWindow(score);
             looseWindow.Show();
         }
 
@@ -79,7 +80,7 @@ namespace Space_Invaders.Logic
         /// <author> Soufiane Ezzemany </author>
         protected override void RunWhenWin()
         {
-            GameWinWindow gamewin = new GameWinWindow();
+            GameWinWindow gamewin = new GameWinWindow(score);
             gamewin.Show();
         }
     }

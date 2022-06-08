@@ -30,6 +30,7 @@ namespace Space_Invaders.View
             //Initialisation du jeu
             jeu = new SpaceInvader(gamePage.Canvas);
             jeu.PlayBackgroundMusic("opening.mp3");
+            this.highscoreLabel.Content = "highscore : " + SpaceInvader.score;
         } 
         /// <summary>
         /// Lancer le jeu

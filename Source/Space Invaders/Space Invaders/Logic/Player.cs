@@ -47,7 +47,7 @@ namespace Space_Invaders.Logic
                 }
                 else
                 {
-                    //Game.Loose();
+                    Game.Loose();
                 }
                 
             }            

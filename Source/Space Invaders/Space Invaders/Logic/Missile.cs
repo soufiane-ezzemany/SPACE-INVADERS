@@ -33,6 +33,7 @@ namespace Space_Invaders.Logic
                 {
                     Game.RemoveItem(other);
                     Game.RemoveItem(this);
+                    SpaceInvader.score += 10;
                     SpaceInvader.numInvaders--;
                 }
             }

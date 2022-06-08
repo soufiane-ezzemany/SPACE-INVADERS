@@ -17,9 +17,10 @@ namespace Space_Invaders.View
     /// </summary>
     public partial class GameLooseWindow : Window
     {
-        public GameLooseWindow()
+        public GameLooseWindow(int score)
         {
             InitializeComponent();
+            this.scoreLabel.Content = "Score : " + score.ToString();
         }
 
         private void Menu(object sender, RoutedEventArgs e)

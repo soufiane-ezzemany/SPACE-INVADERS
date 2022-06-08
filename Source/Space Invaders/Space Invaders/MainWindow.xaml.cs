@@ -59,5 +59,10 @@ namespace Space_Invaders
         {
             Application.Current.Shutdown();
         }
+
+        private void Tutorial(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

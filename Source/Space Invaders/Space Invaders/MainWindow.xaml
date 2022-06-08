@@ -32,7 +32,7 @@
         <Button Grid.Row="3" Height="60" Width="250"  VerticalAlignment="Center" HorizontalAlignment="Center" Content="Play"  Style="{StaticResource ButtonStyle}" Click="PlayGame" />
         <Button  Grid.Row="4" Height="60" Width="250"  VerticalAlignment="Center" HorizontalAlignment="Center" Content="Exit"  Style="{StaticResource ButtonStyle}" Click="Exit"  />
         <Label x:Name="highscoreLabel" Content="Highscore : " Style="{StaticResource Bungee}"  Height="60" Width="250" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Top" Foreground="white" HorizontalContentAlignment="Left" FontSize="18px" BorderThickness="3" BorderBrush="#FEFE5A" />
-        <Slider Style="{StaticResource CustomSlider_V2}" Grid.Row="5" HorizontalAlignment="Center"  VerticalAlignment="Center" Width="220" Height="25" Minimum="0" Maximum="100" Value="0" SmallChange="1"/>
+        <Slider Style="{StaticResource CustomSlider_V2}" Grid.Row="5" HorizontalAlignment="Center"  VerticalAlignment="Center" Width="220" Height="25" Minimum="0" Maximum="1" Value="{Binding BackgroundVolume, Mode=TwoWay}" SmallChange="1"/>
 
     </Grid>
 </Window>

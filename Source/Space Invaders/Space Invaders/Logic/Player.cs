@@ -18,7 +18,7 @@ namespace Space_Invaders.Logic
         private List<Key> mouvements;
         private Heart heart;
         public override string TypeName => "PLAYER";
-
+        private TimeSpan Time;
 
         public Player(double x, double y, Canvas c, Game g)
             : base(x, y, c, g, "Decor/spaceship.png")
@@ -28,6 +28,7 @@ namespace Space_Invaders.Logic
             mouvements = new List<Key>();
             heart = new Heart(0, 0, c, g);
             Game.AddItem(heart);
+            Time = new TimeSpan(0,0,0);
         }
 
         /// <summary>
@@ -61,6 +62,7 @@ namespace Space_Invaders.Logic
 
         public void Animate(TimeSpan dt)
         {
+            Time = Time - dt;
             foreach(Key m in mouvements)
             {
                 switch (m)
@@ -118,17 +120,20 @@ namespace Space_Invaders.Logic
         {
             if (!mouvements.Contains(key))
                 mouvements.Add(key);
-            
-            switch (key)
+            if (Time.TotalMilliseconds <= 0)
             {
-                
-                case Key.Space:
-                    PlaySound("laser-sound.mp3");
-                    //TODO : Improvement lancement missile
-                    Missile m = new Missile(this.Left + 90 , this.Top+ 40  , canvas, this.Game);
-                    this.Game.AddItem(m);
-                    //m.Animate(new TimeSpan(0,0,0,0,1));
-                    break;
+                switch (key)
+                {
+
+                    case Key.Space:
+                        PlaySound("laser-sound.mp3");
+                        //TODO : Improvement lancement missile
+                        Missile m = new Missile(this.Left + 90, this.Top + 40, canvas, this.Game);
+                        this.Game.AddItem(m);
+                        Time = new TimeSpan(0, 0, 0, 0, 600);
+                        //m.Animate(new TimeSpan(0,0,0,0,1));
+                        break;
+                }
             }
             //mouvements.Add(key);
 

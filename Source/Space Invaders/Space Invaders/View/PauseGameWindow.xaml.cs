@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Space_Invaders.Logic;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -17,9 +18,12 @@ namespace Space_Invaders.View
     /// </summary>
     public partial class PauseGameWindow : Window
     {
-        public PauseGameWindow()
+        SpaceInvader jeu;
+        public PauseGameWindow(SpaceInvader jeu)
         {
             InitializeComponent();
+            this.jeu = jeu;
+            DataContext = this.jeu;
         }
         /// <summary>
         /// Retour au menu
@@ -40,7 +44,8 @@ namespace Space_Invaders.View
         /// <author>Soufiane EZZEMANY</author>
         private void Retour(object sender, RoutedEventArgs e)
         {
-            
+            jeu.Resume();
+            this.Close();
         }
     }
 }

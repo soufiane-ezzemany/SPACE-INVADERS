@@ -18,9 +18,15 @@ namespace Space_Invaders.View
     /// </summary>
     public partial class GamePageWindow : Window
     {
+        private SpaceInvader jeu;
+        
         public GamePageWindow()
         {
             InitializeComponent();
+            //Initialisation du jeu
+            jeu = new SpaceInvader(Canvas);
+            jeu.Run();
+            jeu.PlayBackgroundMusic("opening.mp3");
         }
 
         /// <summary>
@@ -28,11 +34,12 @@ namespace Space_Invaders.View
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        /// <author> John Gaudry </author>
+        /// <author> John Gaudry et Soufiane EZZEMANY</author>
         private void PauseSetting(object sender, RoutedEventArgs e)
         {
-            PauseGameWindow pause = new PauseGameWindow();
+            PauseGameWindow pause = new PauseGameWindow(jeu);
             pause.Show();
+            jeu.Pause();
         }
     }
 }

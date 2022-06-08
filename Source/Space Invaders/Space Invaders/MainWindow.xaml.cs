@@ -22,19 +22,12 @@ namespace Space_Invaders
     /// </summary>
     public partial class MainWindow : Window
     {
-        private SpaceInvader jeu;
-        private GamePageWindow gamePage;
+        
         public MainWindow()
         {
             InitializeComponent();
 
-            //Creation d'une page pour le jeu
-            gamePage = new GamePageWindow();
-            //Initialisation du jeu
-            jeu = new SpaceInvader(gamePage.Canvas);
-            jeu.PlayBackgroundMusic("opening.mp3");
             this.highscoreLabel.Content = "highscore : " + SpaceInvader.score;
-            DataContext = jeu;
         }
         /// <summary>
         /// Lancer le jeu
@@ -44,8 +37,7 @@ namespace Space_Invaders
         /// <author>Soufiane EZZEMANY</author>
         private void PlayGame(object sender, RoutedEventArgs e)
         {
-            //Lancer le jeu
-            jeu.Run();
+            GamePageWindow gamePage = new GamePageWindow();
             gamePage.Show();
             this.Hide();
             

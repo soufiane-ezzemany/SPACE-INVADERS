@@ -5,10 +5,12 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <RootNamespace>Space_Invaders</RootNamespace>
     <UseWPF>true</UseWPF>
+    <ApplicationIcon>Res\icon.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
     <None Remove="Font\BungeeInline-Regular.ttf" />
+    <None Remove="Res\icon.ico" />
     <None Remove="Sounds\laser-sound.mp3" />
     <None Remove="Sounds\opening.mp3" />
     <None Remove="Sprites\Aliens\alienb.png" />
@@ -45,10 +47,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Res\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Reference Include="IUTGame">
       <HintPath>..\IUTGame.dll</HintPath>
     </Reference>
@@ -62,6 +60,7 @@
     <Content Include="Sounds\opening.mp3">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Resource Include="Res\icon.ico" />
     <Resource Include="Sprites\Aliens\alienb.png" />
     <Resource Include="Sprites\Aliens\alienr.png" />
     <Resource Include="Sprites\Aliens\alienv.png" />

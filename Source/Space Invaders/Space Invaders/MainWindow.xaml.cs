@@ -39,7 +39,7 @@ namespace Space_Invaders
         {
             GamePageWindow gamePage = new GamePageWindow();
             gamePage.Show();
-            this.Hide();
+            this.Close();
             
         }
         /// <summary>

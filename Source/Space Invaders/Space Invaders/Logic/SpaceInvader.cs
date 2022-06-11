@@ -13,11 +13,12 @@ namespace Space_Invaders.Logic
     public class SpaceInvader : IUTGame.Game
     {
         private Player spaceship;
+        private GamePageWindow gameWindow;
         public static int numInvaders = 36;
         public static int score = 0;
-        public SpaceInvader(Canvas canvas) : base(canvas, "Sprites", "Sounds")
+        public SpaceInvader(Canvas canvas, GamePageWindow gameWindow) : base(canvas, "Sprites", "Sounds")
         {
-
+            this.gameWindow = gameWindow;
         }
         /// <summary>
         /// Initialise les items
@@ -69,9 +70,12 @@ namespace Space_Invaders.Logic
         /// </summary>
         /// <author> Soufiane Ezzemany </author>
         protected override void RunWhenLoose()
-        {
+        {       
+            //afficher la fenetre de perte
             GameLooseWindow looseWindow = new GameLooseWindow(score);
             looseWindow.Show();
+            //fermer la page de jeu
+            gameWindow.Close();
         }
 
         /// <summary>
@@ -79,9 +83,12 @@ namespace Space_Invaders.Logic
         /// </summary>
         /// <author> Soufiane Ezzemany </author>
         protected override void RunWhenWin()
-        {
+        {   
+            //afficher la page ge gagne
             GameWinWindow gamewin = new GameWinWindow(score);
             gamewin.Show();
+            //fermer la page de jeu
+            gameWindow.Close();
         }
     }
 }

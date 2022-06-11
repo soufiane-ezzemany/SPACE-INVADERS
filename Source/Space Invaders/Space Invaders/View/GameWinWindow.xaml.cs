@@ -26,7 +26,9 @@ namespace Space_Invaders.View
 
         private void Menu(object sender, RoutedEventArgs e)
         {
-
+            MainWindow main = new MainWindow();
+            main.Show();
+            this.Close();
         }
     }
 }

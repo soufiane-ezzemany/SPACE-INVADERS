@@ -33,9 +33,9 @@ namespace Space_Invaders.Logic
                 {
                     Game.RemoveItem(other);
                     Game.RemoveItem(this);
-                    SpaceInvader.score += 10;
+                    jeu.Score += 10;
                     SpaceInvader.numInvaders--;
-                    this.jeu.GameWindow.ScoreL.Content = SpaceInvader.score.ToString();
+                    this.jeu.GameWindow.ScoreL.Content = jeu.Score.ToString();
                 }
             }
             else

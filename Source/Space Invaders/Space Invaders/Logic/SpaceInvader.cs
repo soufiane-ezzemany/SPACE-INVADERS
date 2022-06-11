@@ -17,7 +17,6 @@ namespace Space_Invaders.Logic
         private GamePageWindow gameWindow;
         public static int numInvaders = 36;
         public int score = 0;
-        private int highscore = 0;
         private Canvas canvas;
         private Storage store;
         public int Score { get => score; set => score = value; }
@@ -44,12 +43,15 @@ namespace Space_Invaders.Logic
             AddBlocs();
             //Ajout des aliens
             AddAliens();
+            //Lancer le son
             PlayBackgroundMusic("opening.mp3");
+            //Initialiser le sauvegarde de son
             object volume = Storage.Recup("VolumeFile");
             if (volume != null)
             {
                 this.BackgroundVolume = (double)volume;
             }
+            //Initialiser le sauvegarde de score
             object scoreInfo = Storage.Recup("ScoreFile");
             if(scoreInfo == null)
             {
@@ -93,7 +95,7 @@ namespace Space_Invaders.Logic
         protected override void RunWhenLoose()
         {   
             object scoreInfo = Storage.Recup("ScoreFile");
-            if ((int)scoreInfo < score)
+            if ((int)scoreInfo < Score)
             {
                 Storage.Sauve("ScoreFile",score);
             }

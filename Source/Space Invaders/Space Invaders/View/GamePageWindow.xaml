@@ -12,9 +12,9 @@
         </Grid.Background>
 
         <Label Content="Score:" Style="{StaticResource Bungee}"  Height="50" Width="100" HorizontalAlignment="Center"  VerticalAlignment="Top" Foreground="White" HorizontalContentAlignment="Left" FontSize="24px" Margin="-70,0,0,0" />
-        <Label Content="{Binding Score, Mode=TwoWay}" Style="{StaticResource Bungee}"  Height="50" Width="75" HorizontalAlignment="Center"  VerticalAlignment="Top" Foreground="White" HorizontalContentAlignment="Left" FontSize="24px" Margin="95,0,0,0" />
+        <Label Name="ScoreL" Content="0" Style="{StaticResource Bungee}"  Height="50" Width="75" HorizontalAlignment="Center"  VerticalAlignment="Top" Foreground="White" HorizontalContentAlignment="Left" FontSize="24px" Margin="95,0,0,0" />
 
-        <Label Content="Lifes" Style="{StaticResource Bungee}"  Height="50" Width="75" HorizontalAlignment="Left"  VerticalAlignment="Top" Foreground="Red" HorizontalContentAlignment="Left" FontSize="18px"  />
+        <Label Content="Lifes" Style="{StaticResource Bungee}"  Height="50" Width="75" HorizontalAlignment="Left"  VerticalAlignment="Top" Foreground="Red" HorizontalContentAlignment="Left" FontSize="24px"  />
         <Canvas x:Name="Canvas" Margin="0,0,0,0">
             <Button  Background="Transparent" Height="30" Width="80" BorderThickness="2" BorderBrush="white" Focusable="False" Canvas.Right="0" VerticalAlignment="Top" Margin="10, 0, 10,0" Click="PauseSetting" >
                 <DockPanel>
@@ -22,8 +22,6 @@
                     <TextBlock  Text="PAUSE" FontWeight="bold"  Foreground="White" FontSize="15" Height="20"  />
                 </DockPanel>
             </Button>
-            <Label Name="ScoreL" Content="100" Style="{StaticResource Bungee}"  Height="50" Width="75" HorizontalAlignment="Center"  VerticalAlignment="Top" Foreground="White" HorizontalContentAlignment="Left" FontSize="24px" Margin="95,0,0,0" />
-
         </Canvas>
     </Grid>
 </Window>

@@ -1,4 +1,5 @@
 ﻿using Space_Invaders.Logic;
+using Space_Invaders.Stockage;
 using Space_Invaders.View;
 using System;
 using System.Collections.Generic;
@@ -27,7 +28,15 @@ namespace Space_Invaders
         {
             InitializeComponent();
 
-            this.highscoreLabel.Content = "highscore : " + SpaceInvader.score;
+            object score = Storage.Recup("ScoreFile");
+            if(score != null)
+            {
+                this.highscoreLabel.Content = "highscore : " + score.ToString();
+            }
+            else
+            {
+                this.highscoreLabel.Content = "highscore : " + "0";
+            }
         }
         /// <summary>
         /// Lancer le jeu

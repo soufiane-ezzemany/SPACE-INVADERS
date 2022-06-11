@@ -16,9 +16,11 @@ namespace Space_Invaders.Logic
         private Player spaceship;
         private GamePageWindow gameWindow;
         public static int numInvaders = 36;
-        public static int score = 0;
+        public int score = 0;
+        private int highscore = 0;
         private Canvas canvas;
         private Storage store;
+        public int Score { get => score; set => score = value; }
         
         public GamePageWindow GameWindow { get => gameWindow; set => gameWindow = value; }
         public SpaceInvader(Canvas canvas, GamePageWindow gameWindow) : base(canvas, "Sprites", "Sounds")
@@ -48,7 +50,11 @@ namespace Space_Invaders.Logic
             {
                 this.BackgroundVolume = (double)volume;
             }
-
+            object scoreInfo = Storage.Recup("ScoreFile");
+            if(scoreInfo == null)
+            {
+                Storage.Sauve("ScoreFile", 0);
+            }
         }
 
         /// <summary>
@@ -85,7 +91,12 @@ namespace Space_Invaders.Logic
         /// </summary>
         /// <author> Soufiane Ezzemany </author>
         protected override void RunWhenLoose()
-        {       
+        {   
+            object scoreInfo = Storage.Recup("ScoreFile");
+            if ((int)scoreInfo < score)
+            {
+                Storage.Sauve("ScoreFile",score);
+            }
             //afficher la fenetre de perte
             GameLooseWindow looseWindow = new GameLooseWindow(score);
             looseWindow.Show();
@@ -98,7 +109,12 @@ namespace Space_Invaders.Logic
         /// </summary>
         /// <author> Soufiane Ezzemany </author>
         protected override void RunWhenWin()
-        {   
+        {
+            object scoreInfo = Storage.Recup("ScoreFile");
+            if ((int)scoreInfo < score)
+            {
+                Storage.Sauve("ScoreFile", score);
+            }
             //afficher la page ge gagne
             GameWinWindow gamewin = new GameWinWindow(score);
             gamewin.Show();

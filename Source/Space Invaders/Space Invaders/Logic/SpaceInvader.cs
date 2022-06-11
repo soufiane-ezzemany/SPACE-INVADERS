@@ -1,4 +1,5 @@
-﻿using Space_Invaders.View;
+﻿using Space_Invaders.Stockage;
+using Space_Invaders.View;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -16,9 +17,16 @@ namespace Space_Invaders.Logic
         private GamePageWindow gameWindow;
         public static int numInvaders = 36;
         public static int score = 0;
+        private Canvas canvas;
+        private Storage store;
+        
+        public GamePageWindow GameWindow { get => gameWindow; set => gameWindow = value; }
         public SpaceInvader(Canvas canvas, GamePageWindow gameWindow) : base(canvas, "Sprites", "Sounds")
         {
             this.gameWindow = gameWindow;
+            this.canvas = canvas;
+            store = new Storage();
+            
         }
         /// <summary>
         /// Initialise les items
@@ -26,14 +34,21 @@ namespace Space_Invaders.Logic
         /// <author> Soufiane Ezzemany et Ismail MESROUK</author>
         protected override void InitItems()
         {
-            double y = 500;
-            double x = 500;
-            spaceship = new Player(x, y, Canvas, this);
+            double y = 580;
+            double x = 550;
+            spaceship = new Player(x, y, this.canvas, this, this);
             AddItem(spaceship);
             //Ajout des blocs
             AddBlocs();
             //Ajout des aliens
             AddAliens();
+            PlayBackgroundMusic("opening.mp3");
+            object volume = Storage.Recup("VolumeFile");
+            if (volume != null)
+            {
+                this.BackgroundVolume = (double)volume;
+            }
+
         }
 
         /// <summary>
@@ -42,9 +57,9 @@ namespace Space_Invaders.Logic
         /// <author>Ismail MESROUK</author>
         private void AddBlocs()
         {
-            Bloc b = new Bloc(150, 460, Canvas, this);
-            Bloc b1 = new Bloc(500, 460, Canvas, this);
-            Bloc b2 = new Bloc(850, 460, Canvas, this);
+            Bloc b = new Bloc(150, 510, Canvas, this);
+            Bloc b1 = new Bloc(500, 510, Canvas, this);
+            Bloc b2 = new Bloc(850, 510, Canvas, this);
 
             AddItem(b);
             AddItem(b1);
@@ -59,9 +74,9 @@ namespace Space_Invaders.Logic
         {
             for(int i=1; i <= 12; i++)
             {
-                AddItem(new AlienRed(30 +i*80, 110, Canvas, this));
-                AddItem(new AlienBlue(30+ i*80, 165, Canvas, this));
-                AddItem(new AlienGreen(30+ i*80, 220, Canvas, this));
+                AddItem(new AlienRed(30 +i*80, 160, Canvas, this));
+                AddItem(new AlienBlue(30+ i*80, 215, Canvas, this));
+                AddItem(new AlienGreen(30+ i*80, 270, Canvas, this));
             }
         }
 

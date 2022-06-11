@@ -13,10 +13,10 @@ namespace Space_Invaders.Logic
     public class Missile : GameItem, IAnimable
     {
         private double vitesse = 15;
-
-        public Missile(double x, double y, Canvas canvas, Game game ) : base(x, y, canvas, game, "missile.png")
+        private SpaceInvader jeu;
+        public Missile(double x, double y, Canvas canvas, Game game, SpaceInvader jeu) : base(x, y, canvas, game, "missile.png")
         {
-
+            this.jeu = jeu;
         }
 
         public override string TypeName => "MISSIILE"; 
@@ -35,6 +35,7 @@ namespace Space_Invaders.Logic
                     Game.RemoveItem(this);
                     SpaceInvader.score += 10;
                     SpaceInvader.numInvaders--;
+                    this.jeu.GameWindow.ScoreL.Content = SpaceInvader.score.ToString();
                 }
             }
             else

@@ -26,7 +26,7 @@ namespace Space_Invaders.View
             //Initialisation du jeu
             jeu = new SpaceInvader(Canvas, this);
             jeu.Run();
-            jeu.PlayBackgroundMusic("opening.mp3");
+            DataContext = jeu;
         }
 
         /// <summary>

@@ -1,4 +1,5 @@
 ﻿using Space_Invaders.Logic;
+using Space_Invaders.Stockage;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -18,12 +19,14 @@ namespace Space_Invaders.View
     /// </summary>
     public partial class PauseGameWindow : Window
     {
-        SpaceInvader jeu;
+        private SpaceInvader jeu;
+
         public PauseGameWindow(SpaceInvader jeu)
         {
             InitializeComponent();
             this.jeu = jeu;
-            DataContext = this.jeu;
+            this.sliderVolume.Value = jeu.BackgroundVolume;
+
         }
         /// <summary>
         /// Retour au menu
@@ -33,7 +36,9 @@ namespace Space_Invaders.View
         /// <author> John Gaudry</author>
         private void Menu(object sender, RoutedEventArgs e)
         {
-            
+            MainWindow main = new MainWindow();
+            main.Show();
+            this.Close();
         }
 
         /// <summary>
@@ -46,6 +51,13 @@ namespace Space_Invaders.View
         {
             jeu.Resume();
             this.Close();
+        }
+
+        private void SaveVolume(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            this.jeu.BackgroundVolume = sliderVolume.Value;
+            Storage.Sauve("VolumeFile", this.jeu.BackgroundVolume);
+
         }
     }
 }

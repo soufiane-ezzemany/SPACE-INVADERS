@@ -17,18 +17,20 @@ namespace Space_Invaders.Logic
         private Canvas canvas;
         private List<Key> mouvements;
         private Heart heart;
+        private SpaceInvader jeu;
         public override string TypeName => "PLAYER";
         private TimeSpan Time;
 
-        public Player(double x, double y, Canvas c, Game g)
-            : base(x, y, c, g, "Decor/spaceship.png")
+        public Player(double x, double y, Canvas c, Game g, SpaceInvader jeu)
+            : base(x, y, c, g, "Decor/veisseau.png")
         {
-            this.canvas = c;
-            ChangeScale(0.8, 0.8);
+            this.jeu = jeu;
+            //ChangeScale(0.8, 0.8);
             mouvements = new List<Key>();
-            heart = new Heart(0, 0, c, g);
+            heart = new Heart(45, 0, c, g);
             Game.AddItem(heart);
             Time = new TimeSpan(0,0,0);
+            this.canvas = c;
         }
 
         /// <summary>
@@ -75,7 +77,7 @@ namespace Space_Invaders.Logic
                         }
                         break;
                     case Key.Right:
-                        if (this.Right < 1200)
+                        if (this.Right < GameWidth)
                         {
                             MovePlayer(10, 0);
                             this.Orientation = 20;
@@ -126,11 +128,11 @@ namespace Space_Invaders.Logic
                 {
 
                     case Key.Space:
-                        PlaySound("laser-sound.mp3");
+                        PlaySound("shoot.mp3");
                         //TODO : Improvement lancement missile
-                        Missile m = new Missile(this.Left + 90, this.Top + 40, canvas, this.Game);
+                        Missile m = new Missile(this.Left + 90, this.Top + 40, canvas, Game, this.jeu);
                         this.Game.AddItem(m);
-                        Time = new TimeSpan(0, 0, 0, 0, 600);
+                        Time = new TimeSpan(0, 0, 0, 0, 350);
                         //m.Animate(new TimeSpan(0,0,0,0,1));
                         break;
                 }

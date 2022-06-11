@@ -13,6 +13,8 @@
     <None Remove="Res\icon.ico" />
     <None Remove="Sounds\laser-sound.mp3" />
     <None Remove="Sounds\opening.mp3" />
+    <None Remove="Sounds\shoot.mp3" />
+    <None Remove="Sounds\shoot.wav" />
     <None Remove="Sprites\Aliens\alienb.png" />
     <None Remove="Sprites\Aliens\alienr.png" />
     <None Remove="Sprites\Aliens\alienv.png" />
@@ -33,6 +35,7 @@
     <None Remove="Sprites\Decor\alienr.png" />
     <None Remove="Sprites\Decor\alienv.png" />
     <None Remove="Sprites\Decor\spaceship.png" />
+    <None Remove="Sprites\Decor\veisseau.png" />
     <None Remove="Sprites\fleches.png" />
     <None Remove="Sprites\Hearts\heart1.png" />
     <None Remove="Sprites\Hearts\heart2.png" />
@@ -62,6 +65,9 @@
     <Content Include="Sounds\opening.mp3">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Sounds\shoot.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Resource Include="Res\icon.ico" />
     <Resource Include="Sprites\Aliens\alienb.png" />
     <Resource Include="Sprites\Aliens\alienr.png" />
@@ -83,6 +89,7 @@
     <Resource Include="Sprites\Decor\alienr.png" />
     <Resource Include="Sprites\Decor\alienv.png" />
     <Resource Include="Sprites\Decor\spaceship.png" />
+    <Resource Include="Sprites\Decor\veisseau.png" />
     <Resource Include="Sprites\fleches.png" />
     <Resource Include="Sprites\Hearts\heart1.png" />
     <Resource Include="Sprites\Hearts\heart2.png" />

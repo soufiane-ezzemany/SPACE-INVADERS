@@ -5,14 +5,25 @@ using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
 
 namespace Space_Invaders.Stockage
-{
+{   
+    /// <summary>
+    /// Classe pour gérer les sauvegardes et le chargement
+    /// </summary>
+    /// <author>Soufiane EZZMENAY</author>
     public class Storage
-    {
+    {   
+        /// <summary>
+        /// Permet de sauvegarder un objet sur un fichier
+        /// </summary>
+        /// <param name="fichier">le nom de fichier</param>
+        /// <param name="objet">l'objet</param>
+        /// <author>Soufiane EZZMENAY</author>
         public static void Sauve(string fichier, Object objet)
         {
-            // si le fichier existe, il faut le supprimer
+            //Verifier si le fichier existe
             if (File.Exists(fichier))
             {
+                // le supprimer
                 File.Delete(fichier);
             }
             // création du flux pour l'écriture dans le fichier
@@ -26,13 +37,14 @@ namespace Space_Invaders.Stockage
         }
 
         /// <summary>
-        /// Désérialisation
+        /// Permet de charger le contenu d'un fichier et le transformer en objet
         /// </summary>
-        /// <param name="fichier">nom du fichier de sauvegarde</param>
-        /// <returns>objet désérialisé</returns>
+        /// <param name="fichier">nom du fichier</param>
+        /// <returns>objet</returns>
+        /// <author>Soufiane EZZMENAY</author>
         public static Object Recup(string fichier)
         {
-            // Contrôle de l'existance du fichier
+            // Verifier de l'existance du fichier
             if (File.Exists(fichier))
             {
                 // ouverture du flux pour la lecture dans le fichier

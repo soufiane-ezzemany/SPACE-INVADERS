@@ -64,7 +64,7 @@ namespace Space_Invaders
 
         private void Tutorial(object sender, RoutedEventArgs e)
         {
-            Tutorial t = new Tutorial();
+            HighScores t = new HighScores();
             t.Show();
         }
     }

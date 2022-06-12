@@ -16,6 +16,7 @@ namespace Space_Invaders.Logic
         /// <param name="canvas"></param>
         /// <param name="game"></param>
         /// <param name="spriteName"></param>
+        /// <author>John GAUDRY</author>
         public Heart(double x, double y, Canvas canvas, Game game, string spriteName = "Hearts/heart3.png") : base(x, y, canvas, game, spriteName)
         {
             this.ChangeScale(0.7, 0.7);

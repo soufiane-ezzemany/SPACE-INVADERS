@@ -28,10 +28,7 @@ namespace Space_Invaders.Logic
 
         public override string TypeName =>"UFO";
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="dt"></param>
+        //<author>Ismail Mesrouk et Soufiane Ezzemany
         public void Animate(TimeSpan dt)
         {
             PlaySound("passageUFO.mp3");

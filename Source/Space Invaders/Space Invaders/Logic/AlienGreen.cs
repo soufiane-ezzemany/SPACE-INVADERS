@@ -28,14 +28,6 @@ namespace Space_Invaders.Logic
         ///<Author>Gaudry John</Author>
         public override string TypeName => "AlienGreen";
 
-        /// <summary>
-        /// Gestion de collision
-        /// </summary>
-        /// <param name="other"></param>
-        /// <author> John Jaudry </author>
-        public override void CollideEffect(GameItem other)
-        {
-            
-        }
+ 
     }
 }

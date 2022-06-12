@@ -19,7 +19,9 @@ namespace Space_Invaders.Logic
         public int score = 0;
         private Canvas canvas;
         private Storage store;
+        private Invaders invaders;
         public int Score { get => score; set => score = value; }
+        public Invaders Invaders { get => invaders; set => invaders = value; }
         
         public GamePageWindow GameWindow { get => gameWindow; set => gameWindow = value; }
         public SpaceInvader(Canvas canvas, GamePageWindow gameWindow) : base(canvas, "Sprites", "Sounds")
@@ -41,8 +43,10 @@ namespace Space_Invaders.Logic
             AddItem(spaceship);
             //Ajout des blocs
             AddBlocs();
+            this.invaders = new Invaders(100, 100, canvas, this);
+            AddItem(invaders);
             //Ajout des aliens
-            AddAliens();
+            //AddAliens();
             //Lancer le son
             PlayBackgroundMusic("opening.mp3");
             //Initialiser le sauvegarde de son
@@ -78,7 +82,7 @@ namespace Space_Invaders.Logic
         /// Initialisation des aliens
         /// </summary>
         /// <author>Ismail MESROUK</author>
-        private void AddAliens()
+        /*private void AddAliens()
         {
             for(int i=1; i <= 12; i++)
             {
@@ -86,7 +90,7 @@ namespace Space_Invaders.Logic
                 AddItem(new AlienBlue(30+ i*80, 215, Canvas, this));
                 AddItem(new AlienGreen(30+ i*80, 270, Canvas, this));
             }
-        }
+        }*/
 
         /// <summary>
         /// Gére quand on perd

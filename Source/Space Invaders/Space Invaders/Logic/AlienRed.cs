@@ -28,14 +28,6 @@ namespace Space_Invaders.Logic
         /// <author>MESROUK Ismaïl</author>
         public override string TypeName => "AlienRed";
 
-        /// <summary>
-        /// Gestion des collisions
-        /// </summary>
-        /// <param name="other"></param>
-        ///<author>MESROUK Ismaïl</author>
-        public override void CollideEffect(GameItem other)
-        {
-           
-        }
+
     }
 }

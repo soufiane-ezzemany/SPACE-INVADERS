@@ -10,8 +10,10 @@ namespace Space_Invaders.Logic
     /// Classe pour les Aliens Verts
     /// </summary>
     /// <AUTHOR>John Gaudry</AUTHOR>
-    class AlienGreen : Alien
+    class AlienGreen : Alien, IAnimable
     {
+        private TimeSpan timeToShoot;
+        private Canvas canvas;
         /// <summary>
         /// Constructeur d'Alien Verts
         /// </summary>
@@ -22,6 +24,9 @@ namespace Space_Invaders.Logic
         /// <param name="spriteName"></param>
         public AlienGreen(double x, double y, Canvas canvas, Game game) : base(x, y, canvas, game, "Aliens/alienv.png")
         {
+            this.canvas = canvas;
+            Random r = new Random();
+            this.timeToShoot = new TimeSpan(0, 0, r.Next(3, 15));
 
         }
 
@@ -29,5 +34,35 @@ namespace Space_Invaders.Logic
         public override string TypeName => "AlienGreen";
 
         public override int Damage => 10;
+
+        public void Animate(TimeSpan dt)
+        {
+            timeToShoot = timeToShoot - dt;
+            if (timeToShoot.TotalMilliseconds < 0)
+            {
+                // Tir de missile
+                MissileAlien b = new MissileAlien(this.Left + 20, this.Bottom + 5, canvas, this.Game, "greenLaser.png", 8);
+                Game.AddItem(b);
+                // Réinitialisation intervalle de temps
+                Random r = new Random();
+                int ms = r.Next(5000, 15000);
+                timeToShoot = new TimeSpan(0, 0, 0, 0, ms);
+            }
+        }
+
+        public override void CollideEffect(GameItem other)
+        {
+
+        }
+
+        public override void Move(double d)
+        {
+            MoveDA(4, d);
+        }
+
+        public override void MoveDown()
+        {
+            MoveXY(0, 3);
+        }
     }
 }

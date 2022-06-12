@@ -36,6 +36,7 @@
     <None Remove="Sprites\Blocks\bloc7.png" />
     <None Remove="Sprites\Blocks\bloc8.png" />
     <None Remove="Sprites\Blocks\bloc9.png" />
+    <None Remove="Sprites\blueLaser.png" />
     <None Remove="Sprites\Decor\alienb.png" />
     <None Remove="Sprites\Decor\alienr.png" />
     <None Remove="Sprites\Decor\alienv.png" />
@@ -43,6 +44,7 @@
     <None Remove="Sprites\Decor\veisseau.png" />
     <None Remove="Sprites\Decor\wxcvbn.png" />
     <None Remove="Sprites\fleches.png" />
+    <None Remove="Sprites\greenLaser.png" />
     <None Remove="Sprites\Hearts\heart1.png" />
     <None Remove="Sprites\Hearts\heart2.png" />
     <None Remove="Sprites\Hearts\heart3.png" />
@@ -51,6 +53,7 @@
     <None Remove="Sprites\laser1.png" />
     <None Remove="Sprites\missile.png" />
     <None Remove="Sprites\missileAlien.png" />
+    <None Remove="Sprites\redLaser.png" />
     <None Remove="Sprites\spacebar.png" />
   </ItemGroup>
 
@@ -106,6 +109,7 @@
     <Resource Include="Sprites\Blocks\bloc7.png" />
     <Resource Include="Sprites\Blocks\bloc8.png" />
     <Resource Include="Sprites\Blocks\bloc9.png" />
+    <Resource Include="Sprites\blueLaser.png" />
     <Resource Include="Sprites\Decor\alienb.png" />
     <Resource Include="Sprites\Decor\alienr.png" />
     <Resource Include="Sprites\Decor\alienv.png" />
@@ -113,6 +117,7 @@
     <Resource Include="Sprites\Decor\veisseau.png" />
     <Resource Include="Sprites\Decor\wxcvbn.png" />
     <Resource Include="Sprites\fleches.png" />
+    <Resource Include="Sprites\greenLaser.png" />
     <Resource Include="Sprites\Hearts\heart1.png" />
     <Resource Include="Sprites\Hearts\heart2.png" />
     <Resource Include="Sprites\Hearts\heart3.png" />
@@ -121,6 +126,7 @@
     <Resource Include="Sprites\laser1.png" />
     <Resource Include="Sprites\missile.png" />
     <Resource Include="Sprites\missileAlien.png" />
+    <Resource Include="Sprites\redLaser.png" />
     <Resource Include="Sprites\spacebar.png" />
   </ItemGroup>
 

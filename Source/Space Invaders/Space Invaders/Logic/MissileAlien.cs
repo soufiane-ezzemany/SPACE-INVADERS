@@ -8,10 +8,11 @@ namespace Space_Invaders.Logic
 {
     public class MissileAlien : GameItem, IAnimable
     {
-        private double vitesse = 10;
-        public MissileAlien(double x, double y, Canvas canvas, Game game) : base(x, y, canvas, game, "missileAlien.png")
+        private double vitesse;
+        public MissileAlien(double x, double y, Canvas canvas, Game game, string spriteName, double vitesse ) : base(x, y, canvas, game)
         {
-
+            this.ChangeSprite(spriteName);
+            this.vitesse = vitesse;
         }
 
         public override string TypeName => "MISSIILEALIEN";
@@ -26,7 +27,12 @@ namespace Space_Invaders.Logic
             {
                 Game.RemoveItem(this);
             }
-   
+            else if (other.TypeName == "MISSIILE")
+            {
+                Game.RemoveItem(this);
+                Game.RemoveItem(other);
+            }
+
         }
 
         /// <summary>

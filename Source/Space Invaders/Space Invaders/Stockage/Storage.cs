@@ -18,7 +18,7 @@ namespace Space_Invaders.Stockage
         /// <param name="fichier">le nom de fichier</param>
         /// <param name="objet">l'objet</param>
         /// <author>Soufiane EZZMENAY</author>
-        public static void Sauve(string fichier, Object objet)
+        public static void Save(string fichier, Object objet)
         {
             //Verifier si le fichier existe
             if (File.Exists(fichier))
@@ -42,7 +42,7 @@ namespace Space_Invaders.Stockage
         /// <param name="fichier">nom du fichier</param>
         /// <returns>objet</returns>
         /// <author>Soufiane EZZMENAY</author>
-        public static Object Recup(string fichier)
+        public static Object Charge(string fichier)
         {
             // Verifier de l'existance du fichier
             if (File.Exists(fichier))

@@ -50,16 +50,16 @@ namespace Space_Invaders.Logic
             //Lancer le son
             PlayBackgroundMusic("opening.mp3");
             //Initialiser le sauvegarde de son
-            object volume = Storage.Recup("VolumeFile");
+            object volume = Storage.Charge("VolumeFile");
             if (volume != null)
             {
                 this.BackgroundVolume = (double)volume;
             }
             //Initialiser le sauvegarde de score
-            object scoreInfo = Storage.Recup("ScoreFile");
+            object scoreInfo = Storage.Charge("ScoreFile");
             if(scoreInfo == null)
             {
-                Storage.Sauve("ScoreFile", 0);
+                Storage.Save("ScoreFile", 0);
             }
         }
 
@@ -98,10 +98,10 @@ namespace Space_Invaders.Logic
         /// <author> Soufiane Ezzemany </author>
         protected override void RunWhenLoose()
         {   
-            object scoreInfo = Storage.Recup("ScoreFile");
+            object scoreInfo = Storage.Charge("ScoreFile");
             if ((int)scoreInfo < Score)
             {
-                Storage.Sauve("ScoreFile",score);
+                Storage.Save("ScoreFile",score);
             }
             //afficher la fenetre de perte
             GameLooseWindow looseWindow = new GameLooseWindow(score);
@@ -116,10 +116,10 @@ namespace Space_Invaders.Logic
         /// <author> Soufiane Ezzemany </author>
         protected override void RunWhenWin()
         {
-            object scoreInfo = Storage.Recup("ScoreFile");
+            object scoreInfo = Storage.Charge("ScoreFile");
             if ((int)scoreInfo < score)
             {
-                Storage.Sauve("ScoreFile", score);
+                Storage.Save("ScoreFile", score);
             }
 
             //afficher la page ge gagne

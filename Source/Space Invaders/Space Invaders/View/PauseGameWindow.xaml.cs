@@ -33,12 +33,14 @@ namespace Space_Invaders.View
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        /// <author> John Gaudry</author>
+        /// <author> John Gaudry et Soufiane EZZEMANY</author>
         private void Menu(object sender, RoutedEventArgs e)
         {
             MainWindow main = new MainWindow();
             main.Show();
             this.Close();
+            jeu.GameWindow.Close();
+            jeu.StopBackgroundMusic();
         }
 
         /// <summary>
@@ -56,7 +58,7 @@ namespace Space_Invaders.View
         private void SaveVolume(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
             this.jeu.BackgroundVolume = sliderVolume.Value;
-            Storage.Sauve("VolumeFile", this.jeu.BackgroundVolume);
+            Storage.Save("VolumeFile", this.jeu.BackgroundVolume);
 
         }
     }

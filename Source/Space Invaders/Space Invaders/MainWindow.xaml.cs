@@ -28,7 +28,7 @@ namespace Space_Invaders
         {
             InitializeComponent();
 
-            object score = Storage.Recup("ScoreFile");
+            object score = Storage.Charge("ScoreFile");
             if(score != null)
             {
                 this.highscoreLabel.Content = "highscore : " + score.ToString();

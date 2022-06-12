@@ -33,6 +33,11 @@ namespace Space_Invaders.Logic
 
         public override int Damage => 20;
 
+        /// <summary>
+        /// Mouvemet des Aliens
+        /// </summary>
+        /// <param name="dt"></param>
+        /// <author>John Gaudry</author>
         public void Animate(TimeSpan dt)
         {
             timeToShoot = timeToShoot - dt;
@@ -52,7 +57,7 @@ namespace Space_Invaders.Logic
         {
 
         }
-
+    
         public override void Move(double d)
         {
             MoveDA(4, d);

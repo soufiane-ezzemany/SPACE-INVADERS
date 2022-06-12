@@ -22,12 +22,12 @@ namespace Space_Invaders.Logic
         private TimeSpan Time;
 
         public Player(double x, double y, Canvas c, Game g, SpaceInvader jeu)
-            : base(x, y, c, g, "Decor/veisseau.png")
+            : base(x, y, c, g, "Decor/wxcvbn.png")
         {
             this.jeu = jeu;
             //ChangeScale(0.8, 0.8);
             mouvements = new List<Key>();
-            heart = new Heart(45, 0, c, g);
+            heart = new Heart(75, 7, c, g);
             Game.AddItem(heart);
             Time = new TimeSpan(0,0,0);
             this.canvas = c;
@@ -44,12 +44,14 @@ namespace Space_Invaders.Logic
             {
                 if( life > 1 )
                 {
+                    PlaySound("Hit.mp3");
                     life--;
                     Game.RemoveItem(other);
                     heart.ChangeStatus(life);
                 }
                 else
                 {
+                    PlaySound("GameOver.mp3");
                     Game.Loose();
                 }
                 
@@ -130,7 +132,7 @@ namespace Space_Invaders.Logic
                     case Key.Space:
                         PlaySound("shoot.mp3");
                         //TODO : Improvement lancement missile
-                        Missile m = new Missile(this.Left + 90, this.Top + 40, canvas, Game, this.jeu);
+                        Missile m = new Missile(this.Left + 55, this.Top + 40, canvas, Game, this.jeu);
                         this.Game.AddItem(m);
                         Time = new TimeSpan(0, 0, 0, 0, 350);
                         //m.Animate(new TimeSpan(0,0,0,0,1));

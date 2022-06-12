@@ -90,5 +90,10 @@ namespace Space_Invaders.Logic
             MoveDA(5, d);
         }
 
+        public void MoveDown()
+        {
+            MoveXY(0, 3);
+        }
+
     }
 }

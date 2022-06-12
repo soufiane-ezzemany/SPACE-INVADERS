@@ -61,7 +61,10 @@ namespace Space_Invaders.Logic
                 }
             }
 
-            ChangeDirection();
+            if (this.ChangeDirection())
+            {
+                MoveAliensDown();
+            }
             apparitionUFO = apparitionUFO - dt;
             if (apparitionUFO.TotalSeconds < 0)
             {
@@ -75,20 +78,29 @@ namespace Space_Invaders.Logic
             }
         }
 
-        private void ChangeDirection()
+        private bool ChangeDirection()
         {
             foreach (Alien alien in aliens)
             {
                 if (alien.Right > 1200)
                 {
                     moveRight = false;
-                    break;
+                    return true;
                 }
                 else if (alien.Left < 0)
                 {
                     moveRight = true;
-                    break;
+                    return true;
                 }
+            }
+            return false;
+        }
+
+        private void MoveAliensDown()
+        {
+            foreach (Alien alien in aliens)
+            {
+                alien.MoveDown();
             }
         }
 

@@ -6,7 +6,7 @@
         xmlns:res="clr-namespace:Space_Invaders.Res"
         xmlns:local="clr-namespace:Space_Invaders.View"
         mc:Ignorable="d"
-        Title="GameLooseWindow" Height="550" Width="750">
+        Title="{x:Static res:strings.LOOSEWINDOW}" Height="550" Width="750">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="51*"/>

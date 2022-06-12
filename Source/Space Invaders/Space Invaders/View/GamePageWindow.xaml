@@ -6,7 +6,7 @@
         xmlns:res="clr-namespace:Space_Invaders.Res"
         xmlns:local="clr-namespace:Space_Invaders.View"
         mc:Ignorable="d"
-        Title="GamePageWindow" Height="750" Width="1200">
+        Title="{x:Static res:strings.GAMEPAGE}" Height="750" Width="1200">
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="/Sprites/Background/background.png"/>

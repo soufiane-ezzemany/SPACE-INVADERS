@@ -129,11 +129,20 @@
   <data name="GAMEPAD" xml:space="preserve">
     <value>The right and left button to move your spaceship </value>
   </data>
+  <data name="GAMEPAGE" xml:space="preserve">
+    <value>Game </value>
+  </data>
   <data name="GAMEWIN" xml:space="preserve">
     <value>You win !</value>
   </data>
   <data name="LIFES" xml:space="preserve">
     <value>Lifes</value>
+  </data>
+  <data name="LOOSEWINDOW" xml:space="preserve">
+    <value>Game Over </value>
+  </data>
+  <data name="PAUSEGAME" xml:space="preserve">
+    <value>Pause</value>
   </data>
   <data name="PLAY" xml:space="preserve">
     <value>Play</value>
@@ -146,5 +155,8 @@
   </data>
   <data name="TUTORIAL" xml:space="preserve">
     <value>Tutorial</value>
+  </data>
+  <data name="WINWINDOW" xml:space="preserve">
+    <value>Win </value>
   </data>
 </root>

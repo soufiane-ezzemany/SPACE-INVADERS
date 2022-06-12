@@ -97,6 +97,15 @@ namespace Space_Invaders.Res {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Game .
+        /// </summary>
+        public static string GAMEPAGE {
+            get {
+                return ResourceManager.GetString("GAMEPAGE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à You win !.
         /// </summary>
         public static string GAMEWIN {
@@ -111,6 +120,24 @@ namespace Space_Invaders.Res {
         public static string LIFES {
             get {
                 return ResourceManager.GetString("LIFES", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Game Over .
+        /// </summary>
+        public static string LOOSEWINDOW {
+            get {
+                return ResourceManager.GetString("LOOSEWINDOW", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Pause.
+        /// </summary>
+        public static string PAUSEGAME {
+            get {
+                return ResourceManager.GetString("PAUSEGAME", resourceCulture);
             }
         }
         
@@ -147,6 +174,15 @@ namespace Space_Invaders.Res {
         public static string TUTORIAL {
             get {
                 return ResourceManager.GetString("TUTORIAL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Win .
+        /// </summary>
+        public static string WINWINDOW {
+            get {
+                return ResourceManager.GetString("WINWINDOW", resourceCulture);
             }
         }
     }

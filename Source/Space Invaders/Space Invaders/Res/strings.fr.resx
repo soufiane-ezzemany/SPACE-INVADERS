@@ -129,11 +129,20 @@
   <data name="GAMEPAD" xml:space="preserve">
     <value>Boutons gauche et droit pour se déplacer</value>
   </data>
+  <data name="GAMEPAGE" xml:space="preserve">
+    <value>Jeu</value>
+  </data>
   <data name="GAMEWIN" xml:space="preserve">
     <value>Vous avez gagné !</value>
   </data>
   <data name="LIFES" xml:space="preserve">
     <value>Vies</value>
+  </data>
+  <data name="LOOSEWINDOW" xml:space="preserve">
+    <value>Défaite</value>
+  </data>
+  <data name="PAUSEGAME" xml:space="preserve">
+    <value>Pause</value>
   </data>
   <data name="PLAY" xml:space="preserve">
     <value>Jouer</value>
@@ -146,5 +155,8 @@
   </data>
   <data name="TUTORIAL" xml:space="preserve">
     <value>Tutoriel</value>
+  </data>
+  <data name="WINWINDOW" xml:space="preserve">
+    <value>Victoire</value>
   </data>
 </root>

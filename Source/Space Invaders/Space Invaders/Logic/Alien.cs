@@ -16,6 +16,7 @@ namespace Space_Invaders.Logic
         private Canvas canvas;
         private double angle = 0;
         private TimeSpan timeToShoot;
+        public abstract int Demage { get; }
         /// <summary>
         /// Constructeur Alien hérité de GameItem
         /// </summary>

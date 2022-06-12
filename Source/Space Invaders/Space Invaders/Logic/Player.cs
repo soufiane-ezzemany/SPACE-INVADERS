@@ -18,14 +18,22 @@ namespace Space_Invaders.Logic
         private List<Key> mouvements;
         private Heart heart;
         private SpaceInvader jeu;
-        public override string TypeName => "PLAYER";
         private TimeSpan Time;
 
+        public override string TypeName => "PLAYER";
+        /// <summary>
+        /// Constructeur de la classe Player
+        /// </summary>
+        /// <param name="x">absisse</param>
+        /// <param name="y">ordoné</param>
+        /// <param name="c">La Canvas</param>
+        /// <param name="g">Le jeu</param>
+        /// <param name="jeu">Le jeu</param>
+        /// <author>Soufiane EZZMEMANY</author>
         public Player(double x, double y, Canvas c, Game g, SpaceInvader jeu)
             : base(x, y, c, g, "Decor/wxcvbn.png")
         {
             this.jeu = jeu;
-            //ChangeScale(0.8, 0.8);
             mouvements = new List<Key>();
             heart = new Heart(75, 7, c, g);
             Game.AddItem(heart);
@@ -63,9 +71,9 @@ namespace Space_Invaders.Logic
         /// </summary>
         /// <param name="dt"></param>
         /// <author> Soufiane Ezzemany</author>
-
         public void Animate(TimeSpan dt)
-        {
+        {   
+            //En mets les deplacement ici pour avoir des deplacement plus fluides
             Time = Time - dt;
             foreach(Key m in mouvements)
             {
@@ -91,7 +99,7 @@ namespace Space_Invaders.Logic
         }
 
         /// <summary>
-        /// Gérer le deplacement du joueur
+        /// Gérer le deplacement du joueur quand la touche et relasé
         /// </summary>
         /// <param name="key"></param>
         /// <author>Soufiane EZZEMANY</author>
@@ -126,21 +134,17 @@ namespace Space_Invaders.Logic
                 mouvements.Add(key);
             if (Time.TotalMilliseconds <= 0)
             {
-                switch (key)
-                {
-
-                    case Key.Space:
-                        PlaySound("shoot.mp3");
-                        //TODO : Improvement lancement missile
-                        Missile m = new Missile(this.Left + 55, this.Top + 40, canvas, Game, this.jeu);
-                        this.Game.AddItem(m);
-                        Time = new TimeSpan(0, 0, 0, 0, 350);
-                        //m.Animate(new TimeSpan(0,0,0,0,1));
-                        break;
+                if (key == Key.Space)
+                {   
+                    //Lancer le son
+                    PlaySound("shoot.mp3");
+                    //Creation de missile et l'ajouter au jeu
+                    Missile m = new Missile(this.Left + 55, this.Top, canvas, Game, this.jeu);
+                    this.Game.AddItem(m);
+                    //redefinire le timespan pour le prochaine tir
+                    Time = new TimeSpan(0, 0, 0, 0, 350);
                 }
             }
-            //mouvements.Add(key);
-
         }
     }
 }

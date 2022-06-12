@@ -14,7 +14,7 @@ namespace Space_Invaders.Logic
     {
         private double vitesse = 15;
         private SpaceInvader jeu;
-        public Missile(double x, double y, Canvas canvas, Game game, SpaceInvader jeu) : base(x, y, canvas, game, "missile.png")
+        public Missile(double x, double y, Canvas canvas, Game game, SpaceInvader jeu) : base(x, y, canvas, game, "laser1.png")
         {
             this.jeu = jeu;
         }

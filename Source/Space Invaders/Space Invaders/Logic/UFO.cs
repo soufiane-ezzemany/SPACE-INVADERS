@@ -10,8 +10,12 @@ namespace Space_Invaders.Logic
     {
         private Canvas canvas;
         private Game game;
-        
 
+        /// <summary>
+        /// Nombre de points que le joueur a en tuant l'UFO
+        /// </summary>
+        public int Damage { get => 60; }
+        
         /// <summary>
         /// Constructeur de l'UFO
         /// </summary>

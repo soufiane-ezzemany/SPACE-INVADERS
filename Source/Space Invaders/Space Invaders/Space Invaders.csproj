@@ -129,6 +129,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="Res\strings.fr.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Res\strings.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>strings.Designer.cs</LastGenOutput>

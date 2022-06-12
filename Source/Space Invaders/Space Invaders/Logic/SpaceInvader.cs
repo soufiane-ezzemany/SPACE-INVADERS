@@ -15,7 +15,7 @@ namespace Space_Invaders.Logic
     {
         private Player spaceship;
         private GamePageWindow gameWindow;
-        public static int numInvaders = 36;
+        public int numInvaders;
         public int score = 0;
         private Canvas canvas;
         private Storage store;
@@ -24,12 +24,13 @@ namespace Space_Invaders.Logic
         public Invaders Invaders { get => invaders; set => invaders = value; }
         
         public GamePageWindow GameWindow { get => gameWindow; set => gameWindow = value; }
+        public int NumInvaders { get => numInvaders; set => numInvaders = value; }
         public SpaceInvader(Canvas canvas, GamePageWindow gameWindow) : base(canvas, "Sprites", "Sounds")
         {
             this.gameWindow = gameWindow;
             this.canvas = canvas;
             store = new Storage();
-            
+            numInvaders = 36;
         }
         /// <summary>
         /// Initialise les items
@@ -77,20 +78,6 @@ namespace Space_Invaders.Logic
             AddItem(b1);
             AddItem(b2);
         }
-
-        /// <summary>
-        /// Initialisation des aliens
-        /// </summary>
-        /// <author>Ismail MESROUK</author>
-        /*private void AddAliens()
-        {
-            for(int i=1; i <= 12; i++)
-            {
-                AddItem(new AlienRed(30 +i*80, 160, Canvas, this));
-                AddItem(new AlienBlue(30+ i*80, 215, Canvas, this));
-                AddItem(new AlienGreen(30+ i*80, 270, Canvas, this));
-            }
-        }*/
 
         /// <summary>
         /// Gére quand on perd

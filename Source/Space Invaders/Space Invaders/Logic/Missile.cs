@@ -27,7 +27,7 @@ namespace Space_Invaders.Logic
         /// <author>Ismail Mesrouk et Soufiane EZZEMANY</author>
         public override void CollideEffect(GameItem other)
         {   
-            if(SpaceInvader.numInvaders >= 1)
+            if(jeu.NumInvaders >= 1)
             {
                 if (other.TypeName == "AlienRed" || (other.TypeName == "AlienBlue") || (other.TypeName == "AlienGreen"))
                 {
@@ -36,7 +36,7 @@ namespace Space_Invaders.Logic
                     Game.RemoveItem(this);
                     Alien a = (Alien)other;
                     jeu.Score += a.Damage ;
-                    SpaceInvader.numInvaders--;
+                    jeu.NumInvaders--;
                     this.jeu.GameWindow.ScoreL.Content = jeu.Score.ToString();
                 }
                 else if (other.TypeName == "UFO")

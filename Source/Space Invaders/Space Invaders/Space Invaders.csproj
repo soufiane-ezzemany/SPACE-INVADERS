@@ -10,7 +10,7 @@
 
   <ItemGroup>
     <None Remove="Font\BungeeInline-Regular.ttf" />
-    <None Remove="Res\icon.ico" />
+    <None Remove="Res\icon1.ico" />
     <None Remove="Sounds\GameOver.mp3" />
     <None Remove="Sounds\Hit.mp3" />
     <None Remove="Sounds\laser-sound.mp3" />
@@ -88,7 +88,7 @@
     <Content Include="Sounds\Win.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Resource Include="Res\icon.ico" />
+    <Resource Include="Res\icon1.ico" />
     <Content Include="Sounds\GameOver.mp3">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

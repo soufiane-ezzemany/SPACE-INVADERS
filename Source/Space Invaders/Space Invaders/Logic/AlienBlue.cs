@@ -26,6 +26,6 @@ namespace Space_Invaders.Logic
 
         public override string TypeName => "AlienBlue";
 
-        
+        public override int Damage => 10;
     }
 }

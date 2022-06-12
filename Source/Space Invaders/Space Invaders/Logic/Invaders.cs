@@ -12,6 +12,7 @@ namespace Space_Invaders.Logic
         private Canvas canvas;
         private Game game;
         private bool moveRight = true;
+        private TimeSpan apparitionUFO;
 
         public List<Alien> Aliens { get => aliens; set => aliens = value; } 
 
@@ -23,6 +24,8 @@ namespace Space_Invaders.Logic
             this.game = game;
             aliens = new List<Alien>();
             InitializeAliens();
+            Random r = new Random();
+            this.apparitionUFO = new TimeSpan(0, 0, 0, r.Next(10,25));
         }
 
         private void InitializeAliens()
@@ -59,6 +62,17 @@ namespace Space_Invaders.Logic
             }
 
             ChangeDirection();
+            apparitionUFO = apparitionUFO - dt;
+            if (apparitionUFO.TotalSeconds < 0)
+            {
+                // 
+                UFO ufo = new UFO(GameWidth, 80, canvas, this.Game);
+                Game.AddItem(ufo);
+                // Réinitialisation intervalle de temps
+                Random r = new Random();
+                int s = r.Next(10, 45);
+                apparitionUFO = new TimeSpan(0, 0, 0, s);
+            }
         }
 
         private void ChangeDirection()

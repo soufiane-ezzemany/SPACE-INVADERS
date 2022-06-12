@@ -32,11 +32,13 @@ namespace Space_Invaders.Logic
         }
 
         /// <summary>
-        /// Mouvemet des Aliens
+        /// Permet le mouvement des aliens de droite a gauche
         /// </summary>
-        /// <param name="dt"></param>
-        /// <author>John Gaudry</author>
+        /// <param name="d"></param>
         public abstract void Move(double d);
+        /// <summary>
+        /// Permet le mouvement des aliens pour la descente sur les extrémités du jeu
+        /// </summary>
         public abstract void MoveDown();
 
     }

@@ -9,6 +9,16 @@ namespace Space_Invaders.Logic
     public class MissileAlien : GameItem, IAnimable
     {
         private double vitesse;
+        /// <summary>
+        /// Constructeur de la classe MissileAlien, permet de changer les tires et la vitesse par rapport a l'Alien qui tire.
+        /// </summary>
+        /// <param name="x"></param>
+        /// <param name="y"></param>
+        /// <param name="canvas"></param>
+        /// <param name="game"></param>
+        /// <param name="spriteName"></param>
+        /// <param name="vitesse"></param>
+        /// <author>Ismail Mesrouk</author>
         public MissileAlien(double x, double y, Canvas canvas, Game game, string spriteName, double vitesse ) : base(x, y, canvas, game)
         {
             this.ChangeSprite(spriteName);
@@ -18,7 +28,7 @@ namespace Space_Invaders.Logic
         public override string TypeName => "MISSIILEALIEN";
 
         /// <summary>
-        /// gestion de la collision
+        /// Gestion de la collision.
         /// </summary>
         /// <author>Ismail Mesrouk</author>
         public override void CollideEffect(GameItem other)

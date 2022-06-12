@@ -14,7 +14,6 @@ namespace Space_Invaders.Logic
     abstract public class Alien : GameItem, IAnimable
     {
         private Canvas canvas;
-        private double angle = 0;
         private TimeSpan timeToShoot;
         public abstract int Damage { get; }
         /// <summary>
@@ -52,42 +51,16 @@ namespace Space_Invaders.Logic
                 int ms = r.Next(5000, 20000);
                 timeToShoot = new TimeSpan(0, 0, 0, 0, ms);
             }
-
-            /*if (Left < 0)
-            {
-                angle = 0;
-                Left = 0;
-                //MoveXY(0, 5);
-            }
-            else if (Right > 1200)
-            {
-                angle = -180;
-                Right = 1200;
-                //MoveXY(0, 5);
-            }
-
-            MoveDA(5, angle);*/
-
         }
 
         public override void CollideEffect(GameItem other)
         {
-            /*if (other.TypeName == this.TypeName)
-            {
-                if (angle == 0)
-                {
-                    angle = -180;
-                }
-                else
-                {
-                    angle = 0;
-                }
-            }*/
+            
         }
 
         public void Move(double d)
         {
-            MoveDA(5, d);
+            MoveDA(4, d);
         }
 
         public void MoveDown()

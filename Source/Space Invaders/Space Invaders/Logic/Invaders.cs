@@ -65,6 +65,12 @@ namespace Space_Invaders.Logic
             {
                 MoveAliensDown();
             }
+
+            if (this.ArrivedToEnd())
+            {
+                Game.Loose();
+            }
+
             apparitionUFO = apparitionUFO - dt;
             if (apparitionUFO.TotalSeconds < 0)
             {
@@ -104,6 +110,18 @@ namespace Space_Invaders.Logic
             }
         }
 
+        public bool ArrivedToEnd()
+        {
+            foreach (Alien alien in aliens)
+            {
+                if (alien.Bottom >= 610)
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
         public override void CollideEffect(GameItem other)
         {
         }

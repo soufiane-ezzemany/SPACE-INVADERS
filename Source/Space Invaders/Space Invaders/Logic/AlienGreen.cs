@@ -28,6 +28,6 @@ namespace Space_Invaders.Logic
         ///<Author>Gaudry John</Author>
         public override string TypeName => "AlienGreen";
 
-        public override int Damage => 20;
+        public override int Damage => 10;
     }
 }

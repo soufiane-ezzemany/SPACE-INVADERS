@@ -37,7 +37,7 @@ namespace Space_Invaders.Logic
         /// <author> Soufiane Ezzemany et Ismail MESROUK</author>
         protected override void InitItems()
         {
-            double y = 580;
+            double y = 600;
             double x = 550;
             spaceship = new Player(x, y, this.canvas, this, this);
             AddItem(spaceship);

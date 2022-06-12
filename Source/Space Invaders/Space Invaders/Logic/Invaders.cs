@@ -70,7 +70,7 @@ namespace Space_Invaders.Logic
                 Game.AddItem(ufo);
                 // Réinitialisation intervalle de temps
                 Random r = new Random();
-                int s = r.Next(10, 45);
+                int s = r.Next(10, 25);
                 apparitionUFO = new TimeSpan(0, 0, 0, s);
             }
         }

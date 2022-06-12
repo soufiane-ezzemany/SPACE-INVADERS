@@ -28,6 +28,6 @@ namespace Space_Invaders.Logic
         /// <author>MESROUK Ismaïl</author>
         public override string TypeName => "AlienRed";
 
-        public override int Demage => 30;
+        public override int Damage => 30;
     }
 }

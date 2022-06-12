@@ -3,6 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:res="clr-namespace:Space_Invaders.Res"
         xmlns:local="clr-namespace:Space_Invaders.View"
         mc:Ignorable="d"
         Title="GamePageWindow" Height="750" Width="1200">
@@ -14,7 +15,7 @@
         <Label Content="Score:" Style="{StaticResource Bungee}"  Height="50" Width="100" HorizontalAlignment="Center"  VerticalAlignment="Top" Foreground="White" HorizontalContentAlignment="Left" FontSize="24px" Margin="-70,0,0,0" />
         <Label Name="ScoreL" Content="0" Style="{StaticResource Bungee}"  Height="50" Width="75" HorizontalAlignment="Center"  VerticalAlignment="Top" Foreground="White" HorizontalContentAlignment="Left" FontSize="24px" Margin="95,0,0,0" />
 
-        <Label Content="Lifes" Style="{StaticResource Bungee}"  Height="50" Width="87" HorizontalAlignment="Left"  VerticalAlignment="Top" VerticalContentAlignment="Top" Foreground="Red" HorizontalContentAlignment="Left" FontSize="24px"  />
+        <Label Content="{x:Static res:strings.LIFES}" Style="{StaticResource Bungee}"  Height="50" Width="87" HorizontalAlignment="Left"  VerticalAlignment="Top" VerticalContentAlignment="Top" Foreground="Red" HorizontalContentAlignment="Left" FontSize="24px"  />
         <Canvas x:Name="Canvas" Margin="0,0,0,0">
             <Button  Background="Transparent" Height="30" Width="80" BorderThickness="2" BorderBrush="white" Focusable="False" Canvas.Right="0" VerticalAlignment="Top" Margin="10, 0, 10,0" Click="PauseSetting" >
                 <DockPanel>

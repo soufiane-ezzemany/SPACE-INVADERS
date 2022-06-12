@@ -3,6 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:res="clr-namespace:Space_Invaders.Res"
         xmlns:local="clr-namespace:Space_Invaders"
         mc:Ignorable="d"     
         xmlns:gif="https://github.com/XamlAnimatedGif/XamlAnimatedGif" 
@@ -29,11 +30,10 @@
         </Grid.Background>
 
         <Image HorizontalAlignment="Stretch"   VerticalAlignment="Center" Source="/Sprites/Background/Banner.png" Grid.Column="1" Grid.Row="0" Margin="0,25,0,0"/>
-        <Button Grid.Row="3" Height="60" Width="250"  VerticalAlignment="Center" HorizontalAlignment="Center" Content="Play"  Style="{StaticResource ButtonStyle}" Click="PlayGame" />
-        <Button  Grid.Row="4" Height="60" Width="250"  VerticalAlignment="Center" HorizontalAlignment="Center" Content="Tutorial"  Style="{StaticResource ButtonStyle}" Click="Tutorial"  />
+        <Button Grid.Row="3" Height="60" Width="250"  VerticalAlignment="Center" HorizontalAlignment="Center" Content="{x:Static res:strings.PLAY}"  Style="{StaticResource ButtonStyle}" Click="PlayGame" />
+        <Button  Grid.Row="4" Height="60" Width="250"  VerticalAlignment="Center" HorizontalAlignment="Center" Content="{x:Static res:strings.TUTORIAL}"  Style="{StaticResource ButtonStyle}" Click="Tutorial"  />
         <Label x:Name="highscoreLabel" Content="Highscore : " Style="{StaticResource Bungee}"  Height="60" Width="250" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Top" Foreground="white" HorizontalContentAlignment="Left" FontSize="18px" BorderThickness="3" BorderBrush="#FEFE5A" />
-        <Slider Style="{StaticResource CustomSlider_V2}" Grid.Row="6" HorizontalAlignment="Center"  VerticalAlignment="Center" Width="220" Height="25" Minimum="0" Maximum="1" Value="{Binding BackgroundVolume, Mode=TwoWay}" SmallChange="1"/>
-        <Button  Grid.Row="5" Height="60" Width="250"  VerticalAlignment="Center" HorizontalAlignment="Center" Content="Exit"  Style="{StaticResource ButtonStyle}" Click="Exit"  />
+        <Button  Grid.Row="5" Height="60" Width="250"  VerticalAlignment="Center" HorizontalAlignment="Center" Content="{x:Static res:strings.EXIT}"  Style="{StaticResource ButtonStyle}" Click="Exit"  />
 
     </Grid>
 </Window>

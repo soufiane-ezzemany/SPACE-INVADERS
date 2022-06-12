@@ -3,6 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:res="clr-namespace:Space_Invaders.Res"
         xmlns:local="clr-namespace:Space_Invaders.View"
         mc:Ignorable="d" 
         
@@ -27,7 +28,7 @@
         <Image HorizontalAlignment="Center"  Width="136" Height="124" VerticalAlignment="Top" Source="/Sprites/Decor/spaceship.png" Grid.Column="1" Grid.Row="0"/>
         <Image HorizontalAlignment="Right" Height="124" VerticalAlignment="Top" Width="136" Source="/Sprites/Decor/spaceship.png" Grid.Column="2" Grid.Row="1"/>
         <Image HorizontalAlignment="Right" Height="124" VerticalAlignment="Top" Width="136" Source="/Sprites/Decor/spaceship.png" Grid.Column="0" Grid.Row="1"/>
-        <Label Content="You win !" Style="{StaticResource Bungee}" Grid.Column="1" Height="98" Width="412" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Top" Foreground="#FEFE5A" HorizontalContentAlignment="Center" FontSize="50px" Grid.RowSpan="2" />
+        <Label Content="{x:Static res:strings.GAMEWIN}" Style="{StaticResource Bungee}" Grid.Column="1" Height="98" Width="412" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Top" Foreground="#FEFE5A" HorizontalContentAlignment="Center" FontSize="50px" Grid.RowSpan="2" />
         <Label x:Name="scoreLabel" Content="Score : " Style="{StaticResource Bungee}" Grid.Column="1" Height="100" Width="348" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Bottom" Foreground="#FEFE5A" HorizontalContentAlignment="Center" VerticalContentAlignment="Top" FontSize="32px" BorderThickness="3" BorderBrush="#FEFE5A"  />
         <Button Grid.Column="2" Grid.Row="3" Height="50" Width="130"  VerticalAlignment="Top" HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="MENU" FontSize="24" Style="{StaticResource ButtonStyle}" Click="Menu" />
 

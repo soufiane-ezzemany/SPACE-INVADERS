@@ -6,6 +6,10 @@ using System.Windows.Controls;
 
 namespace Space_Invaders.Logic
 {
+    /// <summary>
+    /// Classe UFO
+    /// </summary>
+    /// <author> MESROUK Ismaïl et EZZEMANY Soufiane</author>
     public class UFO : GameItem, IAnimable
     {
         private Canvas canvas;

@@ -25,7 +25,7 @@ namespace Space_Invaders.Logic
         /// <param name="game"></param>
         /// <param name="spriteName"></param>
         /// <author> Gaudry John et Soufiane Ezzemany et Ismaïl Mesrouk</author>
-        protected Alien(double x, double y, Canvas canvas, Game game, string spriteName) : base(x, y, canvas, game, spriteName)
+        public Alien(double x, double y, Canvas canvas, Game game, string spriteName) : base(x, y, canvas, game, spriteName)
         {   
             this.canvas = canvas;
             //Initialisation aléatoire de l'intervalle avant de tirer
@@ -52,24 +52,42 @@ namespace Space_Invaders.Logic
                 timeToShoot = new TimeSpan(0, 0, 0, 0, ms);
             }
 
-            if (Left < 0)
+            /*if (Left < 0)
             {
                 angle = 0;
                 Left = 0;
-                MoveXY(0, 5);
-                // Rebondir();
+                //MoveXY(0, 5);
             }
             else if (Right > 1200)
             {
                 angle = -180;
                 Right = 1200;
-                MoveXY(0, 5);
+                //MoveXY(0, 5);
             }
 
-            MoveDA(5, angle);
+            MoveDA(5, angle);*/
 
         }
 
+        public override void CollideEffect(GameItem other)
+        {
+            /*if (other.TypeName == this.TypeName)
+            {
+                if (angle == 0)
+                {
+                    angle = -180;
+                }
+                else
+                {
+                    angle = 0;
+                }
+            }*/
+        }
+
+        public void Move(double d)
+        {
+            MoveDA(5, d);
+        }
 
     }
 }

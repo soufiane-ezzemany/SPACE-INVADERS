@@ -26,14 +26,6 @@ namespace Space_Invaders.Logic
 
         public override string TypeName => "AlienBlue";
 
-        /// <summary>
-        /// Gestion des collisions
-        /// </summary>
-        /// <param name="other"></param>
-        /// <author> Mesrouk Ismaïl</author>
-        public override void CollideEffect(GameItem other)
-        {
-
-        }
+        
     }
 }

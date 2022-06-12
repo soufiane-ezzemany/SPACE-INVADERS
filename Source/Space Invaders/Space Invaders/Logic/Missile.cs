@@ -32,6 +32,7 @@ namespace Space_Invaders.Logic
                 if (other.TypeName == "AlienRed" || (other.TypeName == "AlienBlue") || (other.TypeName == "AlienGreen"))
                 {
                     Game.RemoveItem(other);
+                    jeu.Invaders.Aliens.Remove((Alien)other);
                     Game.RemoveItem(this);
                     jeu.Score += 10;
                     SpaceInvader.numInvaders--;

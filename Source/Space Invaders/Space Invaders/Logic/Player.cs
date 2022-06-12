@@ -95,7 +95,13 @@ namespace Space_Invaders.Logic
                         break;
                 }
             }
-            
+            //je perds si il ne reste pas d'invaders
+            if(jeu.NumInvaders == 0)
+            {
+                PlaySound("Win.wav");
+                this.Game.Win();
+            }
+
         }
 
         /// <summary>

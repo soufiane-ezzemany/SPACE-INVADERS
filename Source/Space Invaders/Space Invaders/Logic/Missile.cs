@@ -27,32 +27,25 @@ namespace Space_Invaders.Logic
         /// <author>Ismail Mesrouk et Soufiane EZZEMANY</author>
         public override void CollideEffect(GameItem other)
         {   
-            if(jeu.NumInvaders >= 1)
+            
+            if (other.TypeName == "AlienRed" || (other.TypeName == "AlienBlue") || (other.TypeName == "AlienGreen"))
             {
-                if (other.TypeName == "AlienRed" || (other.TypeName == "AlienBlue") || (other.TypeName == "AlienGreen"))
-                {
-                    Game.RemoveItem(other);
-                    jeu.Invaders.Aliens.Remove((Alien)other);
-                    Game.RemoveItem(this);
-                    Alien a = (Alien)other;
-                    jeu.Score += a.Damage ;
-                    jeu.NumInvaders--;
-                    this.jeu.GameWindow.ScoreL.Content = jeu.Score.ToString();
-                }
-                else if (other.TypeName == "UFO")
-                {
-                    Game.RemoveItem(other);
-                    Game.RemoveItem(this);
-                    UFO a = (UFO)other;
-                    jeu.Score += a.Damage;
-                    this.jeu.GameWindow.ScoreL.Content = jeu.Score.ToString();
-                }
+                Game.RemoveItem(other);
+                jeu.Invaders.Aliens.Remove((Alien)other);
+                Game.RemoveItem(this);
+                Alien a = (Alien)other;
+                jeu.Score += a.Damage ;
+                jeu.NumInvaders--;
+                this.jeu.GameWindow.ScoreL.Content = jeu.Score.ToString();
             }
-            else
+            else if (other.TypeName == "UFO")
             {
-                PlaySound("Win.wav");
-                this.Game.Win();
-            }          
+                Game.RemoveItem(other);
+                Game.RemoveItem(this);
+                UFO a = (UFO)other;
+                jeu.Score += a.Damage;
+                this.jeu.GameWindow.ScoreL.Content = jeu.Score.ToString();
+            }       
         }
 
         /// <summary>

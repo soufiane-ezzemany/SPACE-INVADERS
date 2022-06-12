@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Source",
+    "\\Source\\Space Invaders"
   ],
-  "SelectedNode": "\\Space Invaders.sln",
+  "SelectedNode": "\\Source\\Space Invaders\\Space Invaders.sln",
   "PreviewInSolutionExplorer": false
 }

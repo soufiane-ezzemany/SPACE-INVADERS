@@ -121,6 +121,7 @@ namespace Space_Invaders.Logic
             {
                 Storage.Sauve("ScoreFile", score);
             }
+
             //afficher la page ge gagne
             GameWinWindow gamewin = new GameWinWindow(score);
             gamewin.Show();

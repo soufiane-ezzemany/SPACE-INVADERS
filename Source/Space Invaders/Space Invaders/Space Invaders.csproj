@@ -18,6 +18,7 @@
     <None Remove="Sounds\passageUFO.mp3" />
     <None Remove="Sounds\shoot.mp3" />
     <None Remove="Sounds\shoot.wav" />
+    <None Remove="Sounds\Win.wav" />
     <None Remove="Sprites\Aliens\alienb.png" />
     <None Remove="Sprites\Aliens\alienr.png" />
     <None Remove="Sprites\Aliens\alienv.png" />
@@ -77,6 +78,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Sounds\shoot.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sounds\Win.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Resource Include="Res\icon.ico" />

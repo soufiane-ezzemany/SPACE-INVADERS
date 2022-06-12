@@ -41,6 +41,7 @@ namespace Space_Invaders.Logic
             }
             else
             {
+                PlaySound("Win.wav");
                 this.Game.Win();
             }          
         }

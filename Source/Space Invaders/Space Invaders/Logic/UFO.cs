@@ -32,7 +32,11 @@ namespace Space_Invaders.Logic
 
         public override string TypeName =>"UFO";
 
-        //<author>Ismail Mesrouk et Soufiane Ezzemany
+        /// <summary>
+        /// Gère le mouvement de l'UFO se deplaçant vers la gauche
+        /// </summary>
+        /// <param name="dt"></param>
+        /// <author>Ismaïl Mesrouk et Soufiane Ezzemany</author>
         public void Animate(TimeSpan dt)
         {
             PlaySound("passageUFO.mp3");

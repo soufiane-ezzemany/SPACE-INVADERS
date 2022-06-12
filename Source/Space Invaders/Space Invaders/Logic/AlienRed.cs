@@ -33,8 +33,16 @@ namespace Space_Invaders.Logic
         /// <author>MESROUK Ismaïl</author>
         public override string TypeName => "AlienRed";
 
+        /// <summary>
+        /// Score que le Player a lorsqu'il tue un AlienRed
+        /// </summary>
         public override int Damage => 30;
 
+        /// <summary>
+        /// Gère le tir et l'intervalle de temps entre chaque tir pour l'AlienRed
+        /// </summary>
+        /// <param name="dt"></param>
+        /// <author>MESROUK Ismaïl</author>
         public void Animate(TimeSpan dt)
         {
             timeToShoot = timeToShoot - dt;

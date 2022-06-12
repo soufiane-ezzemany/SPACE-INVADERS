@@ -33,8 +33,16 @@ namespace Space_Invaders.Logic
         ///<Author>Gaudry John</Author>
         public override string TypeName => "AlienGreen";
 
+        /// <summary>
+        /// Score que le Player a lorsqu'il tue un AlienGreen
+        /// </summary>
         public override int Damage => 10;
 
+        /// <summary>
+        /// Gère le tir et l'intervalle de temps entre chaque tir pour l'AlienGreen 
+        /// </summary>
+        /// <param name="dt"></param>
+        /// <author>John Gaudry</author>
         public void Animate(TimeSpan dt)
         {
             timeToShoot = timeToShoot - dt;

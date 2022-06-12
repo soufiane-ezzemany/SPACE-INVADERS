@@ -47,13 +47,11 @@ namespace Space_Invaders.Logic
             if (this.Left < 0)
                 this.game.RemoveItem(this);
 
-                MoveDA(10, -180);
-       
+                MoveDA(10, -180);       
         }
 
         public override void CollideEffect(GameItem other)
-        {
-   
+        {  
         }
     }
 }

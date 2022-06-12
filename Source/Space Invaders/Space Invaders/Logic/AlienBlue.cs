@@ -22,6 +22,7 @@ namespace Space_Invaders.Logic
         /// <param name="canvas"></param>
         /// <param name="game"></param>
         /// <param name="spriteName"></param>
+        /// <author>Ismail Mesrouk et Soufiane EZZMANY</author>
         public AlienBlue(double x, double y, Canvas canvas, Game game) : base(x, y, canvas, game, "Aliens/alienb.png")
         {
             this.canvas = canvas;

@@ -133,7 +133,7 @@
     <value>Jeu</value>
   </data>
   <data name="GAMEWIN" xml:space="preserve">
-    <value>Vous avez gagné !</value>
+    <value>Gagné !</value>
   </data>
   <data name="LIFES" xml:space="preserve">
     <value>Vies</value>

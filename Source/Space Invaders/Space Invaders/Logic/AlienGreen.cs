@@ -22,6 +22,7 @@ namespace Space_Invaders.Logic
         /// <param name="canvas"></param>
         /// <param name="game"></param>
         /// <param name="spriteName"></param>
+        /// /// <AUTHOR>John Gaudry et Soufiane EZZEMANY</AUTHOR>
         public AlienGreen(double x, double y, Canvas canvas, Game game) : base(x, y, canvas, game, "Aliens/alienv.png")
         {
             this.canvas = canvas;
@@ -60,7 +61,6 @@ namespace Space_Invaders.Logic
 
         public override void CollideEffect(GameItem other)
         {
-
         }
 
         public override void Move(double d)

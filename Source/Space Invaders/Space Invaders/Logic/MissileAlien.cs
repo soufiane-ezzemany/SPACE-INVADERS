@@ -5,7 +5,11 @@ using System.Text;
 using System.Windows.Controls;
 
 namespace Space_Invaders.Logic
-{
+{   
+    /// <summary>
+    /// Classe missile des aliens
+    /// </summary>
+    /// <author>Ismail Mesrouk</author>
     public class MissileAlien : GameItem, IAnimable
     {
         private double vitesse;

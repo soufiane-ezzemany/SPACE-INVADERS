@@ -29,7 +29,7 @@ namespace Space_Invaders.Logic
         {   
             if(SpaceInvader.numInvaders >= 1)
             {
-                if (other.TypeName == "AlienRed" || (other.TypeName == "AlienBlue") || (other.TypeName == "AlienGreen"))
+                if (other.TypeName == "AlienRed" || (other.TypeName == "AlienBlue") || (other.TypeName == "AlienGreen") || (other.TypeName=="UFO"))
                 {
                     Game.RemoveItem(other);
                     jeu.Invaders.Aliens.Remove((Alien)other);
